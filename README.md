@@ -1,2 +1,2 @@
 # RadicalProtocol
-RadicalProtocol frontend
+RadicalProtocol front-end
