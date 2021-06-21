@@ -1,0 +1,39 @@
+.footer-align{
+    padding-top:50px;
+    text-align: center;
+    background-color:  #EDEFFF;;
+}
+
+.social-item{
+    background-color: white;
+    text-align: center;
+    border-radius: 35px;
+    height: 120px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.first-section{
+    margin-bottom: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.socials-text{
+    margin-top: 42px;
+    font-size: 15px;
+}
+.second-section{
+    margin-bottom: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+
+
+}
+.third-section{
+    margin-bottom: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+
+
+
+}

@@ -1,24 +1,14 @@
 import React from 'react';
+import './nav.css'
 import { Link , Redirect }  from 'react-router-dom';
 
 //if global token === null don't show header
 
-class Nav extends React.Component{
-
-    constructor(props){
-
-        super(props);
-
-        this.state = {
-            // hasToken: false
-        }
-    }
-
-    render(){
+export default function Nav (){
 
 
-        return (
-            <div className="container landing">
+    return (
+            <div className="row landing navigation">
                 <div className="row">
                     <div className="col-md-4 col-lg-4">
                         <div>
@@ -29,13 +19,13 @@ class Nav extends React.Component{
                             </span>
                         </div>
                     </div>
-                    <div className="col-md-3 col-lg-3">
-                        <span>Case Studies</span>
-                        <span>Documentation</span>
-                        <span>About</span>
+                    <div className="col-md-4 col-lg-4 mid-content">
+                        <span className="nav-item">Case Studies</span>
+                        <span className="nav-item">Documentation</span>
+                        <span className="nav-item">About</span>
                     </div>
-                    <div className="col-md-3 col-lg-3">
-                    <span>
+                    <div className="col-md-4 col-lg-4 right-content">
+                    <span className="search nav-item">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="5.5" cy="5" r="4.5" stroke="#282828" stroke-linejoin="round"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2715 12.5L8 8.27523L8.72845 7.5L13 11.7248L12.2715 12.5Z" fill="#282828"/>
@@ -43,16 +33,13 @@ class Nav extends React.Component{
 
                         Search
                     </span>
-                    <button className="mint"> Mint</button>
-                    <button className="connect"> Connect Wallet</button>
+                    <span className="mint nav-item"> Mint</span>
+                    <button className="connect-wallet"> Connect Wallet</button>
                 </div>
 
                     </div>
             </div>
     
-        );
-    }
+     );
+    
 }
-
-
-export default Nav;

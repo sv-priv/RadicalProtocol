@@ -1,0 +1,135 @@
+.landing-align{
+    text-align: center;
+    background-color: rgba(237, 239, 255, 1);
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.read-documentation-button{
+    height:180px;
+    border-radius: 42px;
+    background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
+
+}
+.browse-button{
+    margin-left: 20px;
+    height: 180px;
+    border-radius: 42px;
+    background: #EDEFFF;
+}
+.title{
+    font-family: Whyte Inktrap;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 110%;
+    
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    
+    color: #313439;
+}
+.title{
+    font-family: Whyte Inktrap;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #313439;
+
+}
+.about{
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    /* or 24px */
+    
+    text-align: center;
+    
+    color: #313439;
+}
+.landing-animation{
+    background-color: white;
+    margin-top: 80px;
+    font-size: 50px;
+
+}
+.number-animation{
+    margin-top: 40px;
+    font-size: 60px;
+}
+.total-generated{
+
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #313439;
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.title-earning{
+    padding-bottom:50px;
+}
+.earning-nfts{
+    background-color: white;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+
+}
+.documentation{
+    background-color: white;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+.title-documentation{
+    padding-bottom: 100px;
+}
+.sponsors{
+    background-color: white;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.title-sponsors{
+    padding-bottom: 150px;
+}
+.buttons-landing{
+    background-color: white;
+    border-radius: 60px;
+    padding-bottom: 100px;
+}
+.button-text{
+    margin-top:77px;
+}
+.read-documentation{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: static;
+    width: 140px;
+    height: 37px;
+    font-size: 13px;
+    left: 132px;
+    top: 0px;
+    border: none;
+    background: #F0F1F9;
+    border-radius: 6px;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+

@@ -1,0 +1,39 @@
+.navigation{
+    padding-top: 25px;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #313439;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.mid-content{
+    padding-top: 10px;
+    text-align: center;
+}
+.right-content{
+    text-align: right;
+}
+.nav-item{
+    padding: 0px 30px 20px 0px;
+    padding-top: 10px;
+}
+.connect-wallet{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: static;
+    width: 140px;
+    height: 37px;
+    left: 132px;
+    top: 0px;
+    border: none;
+    background: #F0F1F9;
+    border-radius: 6px;
+}
