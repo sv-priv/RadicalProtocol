@@ -58,13 +58,13 @@
 }
 .landing-animation{
     background-color: white;
-    margin-top: 80px;
-    font-size: 50px;
+    margin-top: 50px;
+    font-size: 40px;
 
 }
 .number-animation{
-    margin-top: 40px;
-    font-size: 60px;
+    margin-top: 50px;
+    font-size: 50px;
 }
 .total-generated{
 
@@ -75,7 +75,7 @@
     text-transform: uppercase;
     color: #313439;
     background-color: white;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 100px;
 }
 .title-earning{

@@ -26,7 +26,7 @@ export default function Landing () {
 
                 </div>
                 <div className="col-md-4">
-                        <div>Top generated since inception
+                        <div>Total generated since inception
                         </div>
                         <div className="number-animation"> $ 1.000.000</div>
                 </div>
