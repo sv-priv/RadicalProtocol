@@ -11,7 +11,7 @@ export default function Nav (){
             <div className="row landing navigation">
                 <div className="row">
                     <div className="col-md-4 col-lg-4">
-                        <Link to="/">
+                        <Link className="text-link" to="/">
                             <div>
                                 <span>
                                     <svg width="132" height="23" viewBox="0 0 132 23" fill="none" xmlns="http://www.w3.org/2000/svg"> 
@@ -23,12 +23,12 @@ export default function Nav (){
                     </div>
                     
                     <div className="col-md-4 col-lg-4 mid-content">
-                    <Link to="/marketplace"><span className="nav-item">Case Studies</span></Link>
-                    <Link to="/documentation"><span className="nav-item">Documentation</span></Link>
-                    <Link to="/about"><span className="nav-item">About</span></Link>
+                    <Link className="text-link" to="/marketplace"><span className="nav-item">Case Studies</span></Link>
+                    <Link className="text-link" to="/documentation"><span className="nav-item">Documentation</span></Link>
+                    <Link className="text-link" to="/about"><span className="nav-item">About</span></Link>
                     </div>
                     <div className="col-md-4 col-lg-4 right-content">
-                    <Link to="/search">
+                    <Link className="text-link" to="/search">
                     <span className="search nav-item">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="5.5" cy="5" r="4.5" stroke="#282828" stroke-linejoin="round"/>

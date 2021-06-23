@@ -6,7 +6,7 @@ import Landing from './landing/Landing';
 import Nav from './shared/nav/nav';
 import Footer from './shared/footer/footer';
 import About from './about/About';
-import Documetation from './documentation/Documentation'
+import Documentation from './documentation/Documentation'
 import Marketplace from './marketplace/Marketplace'
 import Profile  from './profile/Profile';
 import Search from './search/Search';
