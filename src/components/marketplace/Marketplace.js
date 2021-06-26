@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Marketplace.css"
 import Nav from '../shared/nav/nav';
+import NFTEarning from '../partials/NFTEarning/NFTEarning';
 import Footer from '../shared/footer/footer';
 
 export default function Marketplace (){
@@ -50,6 +51,49 @@ export default function Marketplace (){
                     </div>
                 </div>
                 <div className="marketplace">
+                <div className="row nft-list">
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                    </div>
+                    <div className="row nft-list">
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                    </div>
+                    <div className="row nft-list">
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning/>
+                            </div>
+                    </div>
+
                 </div>
 
             </div>

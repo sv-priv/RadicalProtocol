@@ -114,7 +114,6 @@ export default function Landing () {
                             <div className="col-md-3 col-lg-3" >
                                 <NFTEarning/>
                             </div>
-
                     </div>
                         <Link  to="/marketplace" className="text-link"><div className="explore" >EXPLORE ALL → </div></Link>
                 </div>
