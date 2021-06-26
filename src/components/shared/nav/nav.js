@@ -67,7 +67,7 @@ export default function Nav (){
                     <span className="mint nav-item"> Mint</span>
                     <button className="connect-wallet" onClick={connectWallet} isConnected={!isConnected}> Connect Wallet</button>
                     <Link to="/profile" className="text-link">
-                        <div className="profile" isConnected={isConnected}> U </div>
+                        <span className="profile" isConnected={isConnected}> U </span>
                     </Link>
 
                     </div>
