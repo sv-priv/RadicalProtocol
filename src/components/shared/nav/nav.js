@@ -1,12 +1,39 @@
 import React from 'react';
 import './nav.css'
 import { Link , Redirect }  from 'react-router-dom';
+import Modal from 'react-modal';
+// import ConnectModal from '../../partials/ConnectModal/ConnectModal';
 
 //if global token === null don't show header
 
 export default function Nav (){
 
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [isConnected, setIsConnected] = React.useState(false);
 
+
+    function connectWallet(){
+        setIsOpen(true)
+    }
+    function connectMetamask(){
+        setIsConnected(true);
+        setIsOpen(false);
+    }
+
+    const connectModal = {
+        content:{
+            position: 'absolute',
+            width: '600px',
+            height: '517px',
+            borderColor: '#f5f5f5',
+            background: '#FFFFFF',
+            borderRadius: '30px',
+            margin: '0 auto',
+            marginTop: '120px',
+
+            align: 'center'
+        }
+    }
     return (
             <div className="row landing navigation">
                 <div className="row">
@@ -23,7 +50,7 @@ export default function Nav (){
                     </div>
                     
                     <div className="col-md-4 col-lg-4 mid-content">
-                    <Link className="text-link" to="/marketplace"><span className="nav-item">Case Studies</span></Link>
+                    <Link className="text-link" to="/marketplace"><span className="nav-item">Marketplace</span></Link>
                     <Link className="text-link" to="/documentation"><span className="nav-item">Documentation</span></Link>
                     <Link className="text-link" to="/about"><span className="nav-item">About</span></Link>
                     </div>
@@ -38,8 +65,30 @@ export default function Nav (){
                     </span>
                     </Link>
                     <span className="mint nav-item"> Mint</span>
-                    <button className="connect-wallet"> Connect Wallet</button>
-                </div>
+                    <button className="connect-wallet" onClick={connectWallet} isConnected={!isConnected}> Connect Wallet</button>
+                    <Link to="/profile" className="text-link">
+                        <div className="profile" isConnected={isConnected}> U </div>
+                    </Link>
+
+                    </div>
+                    <Modal 
+                        isOpen={modalIsOpen}
+                        style={connectModal}
+
+                        >
+                        <button onClick={() =>setIsOpen(false)} className="button-close">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8249 1.25384C22.327 1.73925 22.327 2.52624 21.8248 3.01165L13.0351 11.5077L21.8249 20.0037C22.327 20.4891 22.327 21.2761 21.8249 21.7615C21.3227 22.2469 20.5085 22.2469 20.0063 21.7615L11.2166 13.2655L2.42682 21.7615C1.92464 22.2469 1.11044 22.2469 0.608255 21.7615C0.106072 21.2761 0.106072 20.4891 0.608255 20.0037L9.39799 11.5077L0.608256 3.01165C0.106073 2.52624 0.106073 1.73925 0.608255 1.25384C1.11044 0.76844 1.92464 0.76844 2.42682 1.25384L11.2166 9.74989L20.0063 1.25384C20.5085 0.76844 21.3227 0.76844 21.8249 1.25384Z" fill="#1E1E1E" fill-opacity="0.75"/>
+                            </svg>
+                        </button>
+
+                        <div className="connect-wallet-title">Connect your wallet</div>
+                        <div className="connect-wallet-desc">By connecting your wallet, you agree to our Terms of Service and our Privacy Policy.</div>
+                        <button className="connect-wallet-button" onClick={connectMetamask}> Connect with Metamask</button><br></br>
+                        <button className="connect-wallet-button2"  onClick={connectMetamask}> Connect with other wallet</button>
+
+
+                    </Modal>
 
                     </div>
             </div>

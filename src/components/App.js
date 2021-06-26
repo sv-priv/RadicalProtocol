@@ -23,8 +23,7 @@ class App extends React.Component {
     return(
     <div>
         <BrowserRouter >
-              <Nav />
-                  <Route path= "/" exact >
+                <Route path= "/" exact >
                   <Landing />
               </Route>
               <Route path= "/error" exact>
@@ -45,7 +44,6 @@ class App extends React.Component {
               <Route path= "/marketplace" exact>
                   <Marketplace/>
               </Route> 
-              <Footer />
         </BrowserRouter>
 
     </div>

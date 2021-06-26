@@ -1,0 +1,101 @@
+.one-nft{
+    width: 546px;
+    height: 546px;
+    background: #F0F1F9;
+    border-color: #F0F1F9;
+    border-radius: 20px;
+    border: none;
+    float: right;
+}
+
+.single-nft-section{
+    margin-top: 50px;
+    margin-bottom:100px;
+}
+
+.single-nft-description-section{
+    margin-left: 70px;
+}
+.single-nft-title{
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 110%;
+    color: #313439;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.single-nft-description{
+    font-family: Whyte;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 110%;
+    color: #313439;
+}
+.buy-nft{
+    position: absolute;
+    width: 175px;
+    height: 67.11px;
+    border: none;
+    color: white;
+    background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
+    border-radius: 20px;
+}
+.view-nft{
+    position: absolute;
+    width: 175px;
+    height: 67.11px;
+    border: none;
+    background: #EDEFFF;
+    border-radius: 20px;
+}
+.username{
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 7px;
+    letter-spacing: 0.02em;
+    color: #313439;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 5px;
+}
+.user-avatar img{
+    position: static;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 5px;
+}
+.author{
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+.filer-sort-section{
+    margin-left: 33px;
+    width: 95%;
+    border-bottom: 1px solid #EDEFFF;
+    margin-bottom: 20px;
+}
+
+.filer-sort-text{
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #313439;
+    float: right;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,22 @@
+.profile-nav{
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #808195;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 15px 0px;
+    margin-top:100px;
+}
+
+.left-profile{
+    background: #F0F1F9;
+   margin: 0;
+    height: 100%; 
+    overflow: hidden;
+}

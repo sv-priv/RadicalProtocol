@@ -6,7 +6,7 @@
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.02em;
-    text-transform: uppercase;
+   text-transform: uppercase;
     color: #313439;
     margin-left: 100px;
     margin-right: 100px;
@@ -27,17 +27,104 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     position: static;
     width: 140px;
     height: 37px;
     left: 132px;
+    text-transform: uppercase;
     top: 0px;
     border: none;
     background: #F0F1F9;
     border-radius: 6px;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13   px;
+}
+.profile{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 14px;
+
+position: static;
+width: 36px;
+height: 37px;
+left: 132px;
+top: 0px;
+
+background: #D7FF66;
+border-radius: 1000px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 0px 20px;
 }
 .text-link {
     color: inherit;
     text-decoration: inherit;
+}
+.connect-wallet-button{
+    position: absolute;
+    width: 430px;
+    height: 80px;
+    left: 85px;
+    top: 215px;
+    color: white;
+    border: none;
+    background: #8794FF;
+    border-radius: 20px;
+}
+.connect-wallet-button2{
+    position: absolute;
+    width: 430px;
+    border: none;
+    height: 80px;
+    left: 85px;
+    top: 315px;
+    color: white;
+    background: #D7FF66;
+    border-radius: 20px;
+}
+.connect-wallet-title{
+    font-family: Whyte Inktrap;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 100%;    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 24%;
+    right: 24.33%;
+    margin-top: -135px;
+    top: 16.96%;
+    bottom: 67.12%;
+    color: #313439;
+
+}
+.connect-wallet-desc{
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    position: absolute;
+    left: 23%;
+    right: 24.33%;
+    top: 18.96%;
+    bottom: 67.12%;
+    text-align: center;
+    color: #313439;
+}
+.button-close{
+    float: right;
+    background-color: white;
+    border: none;
 }
