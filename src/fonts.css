@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Whyte-Inktrap";
+    src: url("../src/assets/fonts/ABCWhyteInktrap-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: "Whyte-Inktrap";
+    src: url("../src/assets/fonts/ABCWhyteInktrap-Regular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Grtsk-Zetta";
+    src: url("./assets/fonts/Grtsk-Zetta-Regular-Latin-rosco_kalis.woff") format('woff');
+}
+@font-face {
+    font-family: "Grtsk-Zetta";
+    src: url("./assets/fonts/Grtsk-Zetta-Regular-Latin-rosco_kalis.ttf") format('ttf');
+}
+
+@font-face {
+    font-family: "Grtsk-Zetta";
+    src: url("./assets/fonts/Grtsk-Zetta-Regular-Latin-rosco_kalis.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Whyte";
+    src: url("./assets/fonts/ABCWhyte-Medium.woff") format('woff');
+}
+@font-face {
+    font-family: "Whyte";
+    src: url("./assets/fonts/ABCWhyte-Medium.woff") format('woff2');
+}
+@font-face {
+    font-family: "Whyte";
+    src: url("./assets/fonts/ABCWhyte-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: "Whyte";
+    src: url("./assets/fonts/ABCWhyte-Regular.woff2") format('woff2');
+}

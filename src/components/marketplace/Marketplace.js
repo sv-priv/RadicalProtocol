@@ -3,7 +3,7 @@ import "./Marketplace.css"
 import Nav from '../shared/nav/nav';
 import NFTEarning from '../partials/NFTEarning/NFTEarning';
 import Footer from '../shared/footer/footer';
-
+import { Link } from 'react-router-dom';
 export default function Marketplace (){
 
 
@@ -38,7 +38,9 @@ export default function Marketplace (){
                                 <button className="buy-nft"> BUY </button>
                             </div>
                             <div className="col-md-6 col-lg-6">
-                            <button className="view-nft"> VIEW ARTWORK</button>
+                            <Link to="/singlenft"className="text-link">
+                                <button className="view-nft"> VIEW ARTWORK</button>
+                            </Link>
                             </div>
                         </div>
 

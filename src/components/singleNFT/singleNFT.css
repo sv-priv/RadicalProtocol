@@ -78,12 +78,11 @@
 }
 .single-nft-nav span{
     margin-right: 20px;
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 120%;
-    /* identical to box height, or 17px */
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #B2B2C1;

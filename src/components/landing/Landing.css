@@ -1,13 +1,14 @@
 .landing-align{
     text-align: center;
     background-color: rgba(237, 239, 255, 1);
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
 }
 
 .read-documentation-button{
     height:180px;
+    color: white;
     border-radius: 42px;
     background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
 
@@ -29,7 +30,7 @@
     margin-top: 70px;
 }
 .title{
-    font-family: Whyte Inktrap;
+    font-family: Whyte-Inktrap;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -42,7 +43,7 @@
     color: #313439;
 }
 .title{
-    font-family: Whyte Inktrap;
+    font-family: Whyte-Inktrap;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -144,6 +145,7 @@
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
     padding-bottom: 100px;
+    text-transform: uppercase;
 }
 .button-text{
     margin-top:77px;

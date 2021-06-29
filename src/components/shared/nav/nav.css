@@ -1,6 +1,6 @@
 .navigation{
     padding-top: 25px;
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -36,7 +36,7 @@
     border: none;
     background: #F0F1F9;
     border-radius: 6px;
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     font-size: 13   px;
@@ -75,7 +75,7 @@
     border-radius: 20px;
 }
 .connect-wallet-title{
-    font-family: Whyte Inktrap;
+    font-family:;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;

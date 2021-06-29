@@ -1,5 +1,6 @@
 import React from 'react';
 import "./NFTEarning.css"
+import {Link } from 'react-router-dom'
 
 export default function NFTEarning (){
 
@@ -9,7 +10,9 @@ export default function NFTEarning (){
                 <div className="card">
                     <div className="card-img-top"  alt=""></div>
                     <div className="card-body">
-                        <h5 className="title-earning">Spherical Harmony</h5>
+                        <Link to="/singlenft"className="text-link">
+                            <h5 className="title-earning">Spherical Harmony</h5>
+                        </Link>
                         <div className="author-earning">
                             <span className=""><img src=""></img> </span>
                             <span className="">@Username </span>

@@ -7,7 +7,7 @@
 .modal-nav span{
     margin-right: 50px;
     text-transform: uppercase;
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -22,7 +22,7 @@
     color: #B2B2C1;
 }
 .title-mint{
-    font-family: Whyte Inktrap;
+    font-family: Whyte-Inktrap;
     font-style: normal;
     font-weight: normal;
     font-size: 35px;
@@ -46,7 +46,7 @@
     text-align: center;
     margin-top: 20px;
     padding-top: 40px;
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     margin: 0 auto;
@@ -92,7 +92,7 @@
     margin-right: 20px;
     background: #FFFFFF;
     border-radius: 50px;
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -113,7 +113,7 @@
     background: #F0F1F9;
     border: none!important;
     border-radius: 20px;
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -127,7 +127,7 @@
 .nft-copies{
     padding-left: 2%;
     
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -146,7 +146,7 @@
 .nft-name{    
     padding-left: 2%;
     width: 430px;
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -166,7 +166,7 @@
     background: #F0F1F9;
     border: none;
     border-radius: 20px;
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -188,7 +188,7 @@
     background: #F0F1F9;
     border-radius: 20px;
     margin-bottom: 114px;
-    font-family: Grtsk Zetta;
+    font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
