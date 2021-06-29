@@ -87,7 +87,7 @@ export default function Landing () {
 
                 </div>
                 <div className="row earning-nfts">
-                    <div className="title title-earning">These NFTS are earning</div>
+                    <div className="title title-earning-section">These NFTS are earning</div>
                     <span className="button-to-left">
                         <svg width="71" height="56" viewBox="0 0 71 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="71" height="56" rx="28" transform="matrix(-1 0 0 1 71 0)" fill="#EDEFFF"/>
@@ -238,23 +238,23 @@ export default function Landing () {
             
                 <div className="row sponsors">
                     <div className="title title-sponsors"> BUILT WITH THEM</div>
-                    <div className="col-md-3 col-lg-3">
-                        <svg width="84" height="137" viewBox="0 0 84 137" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.5" clip-path="url(#clip0)">
-                        <path d="M41.9871 0L41.0699 3.1211V93.6883L41.9871 94.6049L83.9746 69.755L41.9871 0Z" fill="#343434"/>
-                        <path d="M41.9875 0L0 69.755L41.9875 94.6052V50.6466V0Z" fill="#8C8C8C"/>
-                        <path d="M41.9863 102.565L41.4695 103.196V135.458L41.9863 136.969L83.9988 77.7275L41.9863 102.565Z" fill="#3C3C3B"/>
-                        <path d="M41.9872 136.969V102.564L-0.000366211 77.7271L41.9872 136.969Z" fill="#8C8C8C"/>
-                        <path d="M41.9867 94.6049L83.9736 69.7553L41.9867 50.647V94.6049Z" fill="#141414"/>
-                        <path d="M0.000488281 69.7554L41.9874 94.6049V50.647L0.000488281 69.7554Z" fill="#393939"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0">
-                        <rect width="84" height="137" fill="white"/>
-                        </clipPath>
-                        </defs>
-                        </svg>
-                    </div>
+                        <div className="col-md-3 col-lg-3">
+                            <svg width="84" height="137" viewBox="0 0 84 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.5" clip-path="url(#clip0)">
+                            <path d="M41.9871 0L41.0699 3.1211V93.6883L41.9871 94.6049L83.9746 69.755L41.9871 0Z" fill="#343434"/>
+                            <path d="M41.9875 0L0 69.755L41.9875 94.6052V50.6466V0Z" fill="#8C8C8C"/>
+                            <path d="M41.9863 102.565L41.4695 103.196V135.458L41.9863 136.969L83.9988 77.7275L41.9863 102.565Z" fill="#3C3C3B"/>
+                            <path d="M41.9872 136.969V102.564L-0.000366211 77.7271L41.9872 136.969Z" fill="#8C8C8C"/>
+                            <path d="M41.9867 94.6049L83.9736 69.7553L41.9867 50.647V94.6049Z" fill="#141414"/>
+                            <path d="M0.000488281 69.7554L41.9874 94.6049V50.647L0.000488281 69.7554Z" fill="#393939"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="84" height="137" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
                     <div className="col-md-3 col-lg-3">
                     <svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M111.312 0H25.6875C11.5007 0 0 11.5007 0 25.6875V111.312C0 125.499 11.5007 137 25.6875 137H111.312C125.499 137 137 125.499 137 111.312V25.6875C137 11.5007 125.499 0 111.312 0Z" fill="#FEDA03"/>

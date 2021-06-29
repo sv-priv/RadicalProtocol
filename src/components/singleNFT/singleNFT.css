@@ -1,0 +1,93 @@
+.picture-section{
+    height: 600px;
+    background: #EDEFFF;
+    margin-top: 30px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+.buy-button{
+    position: absolute;
+    width: 490px;
+    margin-top: 20px;
+    height: 67.11px;
+    border:none;
+    color: white;
+    background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
+    border-radius: 20px;
+}
+.picture-section .image {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: white;
+    border-radius: 20px;
+
+
+}
+.left-part{
+    border-right: 1px solid rgba(215, 218, 241, 1);
+    margin-top: 35px;
+    min-height: 80px;
+
+}
+.patronage-desc {
+    color: #D7DAF1;
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 120%;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.listed-price-desc{
+    color: #D7DAF1;
+    margin-top: 20px;
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 120%;
+}
+.patronage {
+
+    text-transform: uppercase;
+    color: #313439;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.right-part{
+    margin-top: 35px;
+    min-height: 80px;
+
+}
+.nft-price{
+    margin: 0 auto;
+    margin-top: 90px;
+    border-top:1px solid rgba(215, 218, 241, 1)    ;
+}
+.single-nft-nav{
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.single-nft-nav span{
+    margin-right: 20px;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #B2B2C1;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

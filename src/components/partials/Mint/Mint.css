@@ -1,0 +1,210 @@
+.modal-nav{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.modal-nav span{
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    width: 85px;
+    padding: 10px 16px;
+    border-radius: 50px;
+    height: 35px;
+    color: #B2B2C1;
+}
+.title-mint{
+    font-family: Whyte Inktrap;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 100%;    
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #313439;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.active{
+   background-color:rgba(73, 70, 230, 1);
+   color: white!important;
+
+}
+.button-next{
+    width: 429px;
+    height: 110px;
+    left: 455px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 40px;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
+    border-radius: 30px;
+
+}
+.nft-droparea{
+    width: 824px;
+    height: 350px;
+    margin: 0 auto;
+    background: #F0F1F9;
+    border-radius: 110px;
+    margin-bottom: 34px;
+}
+.nft-droparea-desc{
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #313439;
+    flex: none;
+    padding-top: 10%;
+}
+.allowed-formats{
+    text-align: center;
+    margin-top: 10%;
+}
+.format{
+    padding: 10px;
+    width: 89px;
+    height: 35px;
+    margin-right: 20px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #B2B2C1;
+
+}
+
+.nft-info{
+    margin-left: 28%;
+}
+.nft-desc{
+    width: 556px;
+    height: 220px;
+    padding-left: 2%;
+    background: #F0F1F9;
+    border: none!important;
+    border-radius: 20px;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    margin-bottom: 2%;
+
+    text-transform: uppercase;
+    color: #4A4E52;
+}
+.nft-copies{
+    padding-left: 2%;
+    
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    color: #4A4E52;
+    width: 173px;
+    height: 54px;
+    background: #F0F1F9;
+    border-radius: 20px;
+    border: none!important;
+}
+
+.nft-name{    
+    padding-left: 2%;
+    width: 430px;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #4A4E52;
+    height: 54px;
+    border: none!important;
+    background: #F0F1F9;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+.nft-mint-price{
+    width: 414px;
+    height: 125px;
+    background: #F0F1F9;
+    border: none;
+    border-radius: 20px;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;  
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #4A4E52;
+    padding-left: 20px;
+    padding-bottom: 45px;
+    margin-bottom: 20px;
+}
+
+.nft-mint-patronage{
+    border: none;
+    width: 414px;
+    padding-left: 20px;
+    padding-bottom: 45px;
+    height: 125px;
+    background: #F0F1F9;
+    border-radius: 20px;
+    margin-bottom: 114px;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #4A4E52;
+}
+.nft-pricing{
+    text-align: center;
+}
+.collections{
+    margin-top: 5%;
+    margin-bottom: 163px;
+    text-align: center;
+}
+.collections span{
+    margin-right: 2%;
+}

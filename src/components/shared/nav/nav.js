@@ -30,7 +30,6 @@ export default function Nav (){
             borderRadius: '30px',
             margin: '0 auto',
             marginTop: '120px',
-
             align: 'center'
         }
     }
@@ -64,7 +63,9 @@ export default function Nav (){
                         Search
                     </span>
                     </Link>
+                    <Link to="/mint"  className="text-link">
                     <span className="mint nav-item"> Mint</span>
+                    </Link>
                     <button className="connect-wallet" onClick={connectWallet} isConnected={!isConnected}> Connect Wallet</button>
                     <Link to="/profile" className="text-link">
                         <span className="profile" isConnected={isConnected}> U </span>

@@ -14,7 +14,7 @@ export default function Marketplace (){
             
                 <div className="row single-nft-section">
                     <div className="col-md-6 col-lg-6 ">
-                        <img className="one-nft"></img>
+                        <div className="one-nft"></div>
                     </div>
                     <div className="col-md-3 col-lg-3 single-nft-description-section">
                         <svg width="27" height="11" viewBox="0 0 27 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,21 @@ export default function Marketplace (){
 
                 </div>
                 <div className="filer-sort-section">
+
                     <div className="filer-sort-text">
+                        <span className="upper">
+                            <svg width="20" height="5" viewBox="0 0 20 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="20" y="3" width="20" height="1" transform="rotate(-180 20 3)" fill="#313439"/>
+                                <circle cx="15.5" cy="2.5" r="2.5" transform="rotate(-180 15.5 2.5)" fill="#313439"/>
+                            </svg>
+                        </span>
+
+                        <span className="down">
+                            <svg width="20" height="5" viewBox="0 0 20 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="2" width="20" height="1" fill="#313439"/>
+                            <circle cx="4.5" cy="2.5" r="2.5" fill="#313439"/>
+                            </svg>
+                        </span>
                         FILTER & SORT
                     </div>
                 </div>

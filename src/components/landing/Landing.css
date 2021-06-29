@@ -83,8 +83,9 @@
     padding-top: 70px;
     padding-bottom: 100px;
 }
-.title-earning{
+.title-earning-section{
     padding-bottom:20px;
+    text-align: center!important;
 }
 .description{
     width: 300px;

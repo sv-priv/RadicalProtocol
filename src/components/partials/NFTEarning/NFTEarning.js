@@ -7,21 +7,32 @@ export default function NFTEarning (){
     return(
         <div>
                 <div className="card">
-                    <img className="card-img-top"  alt=""/>
+                    <div className="card-img-top"  alt=""></div>
                     <div className="card-body">
-                        <div className="row">
-                            <div className="col-md-6">
-
-                            </div>
-                            <div className="col-md-6">
-                                
-                            </div>
+                        <h5 className="title-earning">Spherical Harmony</h5>
+                        <div className="author-earning">
+                            <span className=""><img src=""></img> </span>
+                            <span className="">@Username </span>
                         </div>
-                        
-                        
+                        <div className="row earning-price">
+                            <div className="col-md-6 col-lg-6 left-part-earning">
+                                <div className="listed-price-earning">
+                                    1.5 ETH
+                                </div>
+                                <div className="listed-price-desc-earning">
+                                    Listed Price
+                                </div>
+                            </div>
+                            <div className="col-md-6 col-lg-6 right-part-earning">
+                                <div className="patronage-earning">
+                                    10%
+                                </div>
+                                <div className="patronage-desc-earning">
+                                    Patronage
+                                </div>
+                            </div>
 
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
                     </div>
                 </div>
         </div>
