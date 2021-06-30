@@ -9,18 +9,46 @@
     color: #808195;
     flex: none;
     order: 1;
+
     flex-grow: 0;
     margin: 15px 0px;
-    margin-top:120px;
+    margin-top: 200px;
     margin-left: 50px;
 }
 .profile-nav div{
     margin-bottom: 25px;
 }
+.back-to-markeplace{
+    float: left;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #313439;
+}
+.right-profile-menu{
+    float: right;
+}
+
+.right-profile{
+    height: 1500px;
+    padding-left: 20px;
+    margin-left: 25%;
+    margin-top: 30px;
+}
 
 .left-profile{
     background: #F0F1F9;
-   margin: 0;
-    height: 100%; 
+    margin: 0;
+    height: 1000px; 
     overflow: hidden;
+    position: fixed;
+}
+
+.logo-profile{
+    margin-left: 50px;
+    margin-top: 30px;
 }

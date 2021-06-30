@@ -68,8 +68,7 @@ export default function Landing () {
                     <span> Total volume 1 week <span className="total-volume">+ $12209</span></span>
                     <span> Total volume 1 month <span className="total-volume">+ $12209</span></span>
                     <span> Total volume 1 day <span className="total-volume">+ $12209</span></span>
-                    <span> Total volume 1 week <span className="total-volume">+ $12209</span></span>
-                    <span> Total volume 1 month <span className="total-volume">+ $12209</span></span>
+
                     
                 </div>
                 <div className="row earning-nfts">
@@ -109,10 +108,6 @@ export default function Landing () {
                     <span> Revenue 1 month <span className="total-revenue">+ $12209</span></span>
                     <span> Revenue  1 day <span className="total-revenue">+ $12209</span></span>
                     <span> Revenue 1 week <span className="total-revenue">+ $12209</span></span>
-                    <span> Revenue 1 month <span className="total-revenue">+ $12209</span></span>
-                    <span> Revenue 1 month <span className="total-revenue">+ $12209</span></span>
-
-                    
 
                 </div>
         
