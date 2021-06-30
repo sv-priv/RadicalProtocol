@@ -17,13 +17,13 @@ export default function Landing () {
             <div className="landing-align">
 
                 <div className="row landing-animation">
-                    <div className="col-md-4">
+                    <div className="col-md-3">
 
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-6">
                             A decentralized protocol unlocking endless streamed income generation for NFT creators
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-3">
 
                     </div>
                 </div>
@@ -35,7 +35,7 @@ export default function Landing () {
                     <div className="col-md-4">
                             <div>Total generated since inception
                             </div>
-                            <div className="number-animation"> $ 1.000.000</div>
+                            <div className="number-animation"> $ 1.546.691</div>
                     </div>
                     <div className="col-md-4">
 

@@ -28,14 +28,13 @@
 .left-part-earning{
     text-align: left;
     border-right: 1px solid rgba(215, 218, 241, 1);
-    margin-top: 10px;
+    margin-top: 15px;
     min-height: 60px;
 
 }
 .listed-price-desc-earning{
     text-align: left;
     color: #D7DAF1;
-    margin-top: 20px;
     font-family: Whyte;
     font-style: normal;
     font-weight: normal;
@@ -46,7 +45,7 @@
 }
 .right-part-earning{
     text-align: left;
-    margin-top: 20px;
+    margin-top: 15px;
     min-height: 50px;
 
 }
@@ -54,7 +53,6 @@
     text-align: left;
     text-transform: uppercase;
     color: #313439;
-    margin-left: 20px;
     padding-left: 20px;
 
 }
@@ -79,4 +77,15 @@
     width: 260px;
     background: rgba(255, 255, 255, 1) ;
 
+}
+.patronage-desc-earning{
+    text-align: left;
+    margin-left: 20px;
+    color: #D7DAF1;
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 120%;
 }
