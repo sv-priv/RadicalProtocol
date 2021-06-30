@@ -30,11 +30,14 @@ export default function Profile (){
                 </div>
                 <div className="col-md-9 col-lg-9 overview right-profile" >
                     <div className="row">
+                            
                             <div className="col-md-9 col-lg-9 back-to-markeplace">
-                                ← Back to marketplace
+                                <Link className="text-link" to="/marketplace">
+                                    ← Back to marketplace
+                                </Link>
                             </div>
                             <span className="col-md-3 col-lg-3 right-profile-menu">
-                                <Link className="text-link" to="/search">
+                                <Link className="text-link">
                                     <span className=" nav-item">
                                         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="5.5" cy="5" r="4.5" stroke="#282828" stroke-linejoin="round"/>
@@ -44,7 +47,9 @@ export default function Profile (){
                                     </span>
                                 </Link>
 
-                                <span className=" nav-item"> Mint</span>
+                                <Link className="text-link" to="/mint">
+                                    <span className=" nav-item"> Mint</span>
+                                </Link>
 
                                 <Link to="/profile" className="text-link">
                                     <span className="profile"> U </span>
