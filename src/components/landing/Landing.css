@@ -13,11 +13,24 @@
     background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
 
 }
+.read-documentation-button:hover{
+    height:180px;
+    color: white;
+    border-radius: 42px;
+    background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
+}
 .browse-button{
     margin-left: 20px;
     height: 180px;
     border-radius: 42px;
     background: #EDEFFF;
+}
+.browse-button:hover{
+    margin-left: 20px;
+    height: 180px;
+    border-radius: 42px;
+    background: #BAC2FF;
+    ;
 }
 .button-to-left{
     position: absolute;
@@ -116,9 +129,42 @@
     margin-top: 100px;
     padding-left: 75px;
 }
+.total-volume{
+    background: #D7FF66;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 30px;
+
+}
+.total-revenue{
+    background: #BAC2FF;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 30px;
+}
+.moving-prices span{
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #313439;
+}
 .text-link {
-    color: inherit;
     text-decoration: inherit;
+    font-family: Grtsk Zetta;
+    color: #3B50FF;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 180px;}
+}
+.moving-prices{
+    position: absolute;
+    animation: mymove 3s infinite;
+    animation-timing-function: linear;
+    max-width: 100%;
 }
 .documentation{
     background-color: white;
@@ -169,4 +215,24 @@
     margin-top:50px;
     margin-bottom: 50px;
 }
+.read-documentation:hover{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 140px;
+    height: 37px;
+    font-size: 11px;
+    left: 132px;
+    top: 0px;
+    border: none;
+    border-radius: 6px;
+    margin-top:50px;
+    color: white;
+    margin-bottom: 50px;
+    background: #BAC2FF;
+}
+.social-item:hover{
+    background: rgba(186, 194, 255, 1)    ;
 
+}

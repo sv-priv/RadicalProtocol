@@ -198,7 +198,6 @@ export default function  Mint() {
         <Modal 
             isOpen={modalPriceIsOpen}
             style={connectModal}>
-
                     <div className="title-mint">
                         Mint your nft
                     </div>
@@ -217,7 +216,7 @@ export default function  Mint() {
                         </div>
 
                     </div>
-                    <Link to="/">
+                    <Link to="/profile" className="text-link">
 
                     <div className="button-next" onClick={addCollection}>
                             Mint

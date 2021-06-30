@@ -15,6 +15,9 @@
     background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
     border-radius: 20px;
 }
+.buy-button:hover{
+    background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
+}
 .picture-section .image {
     width: 400px;
     height: 400px;
@@ -89,4 +92,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+.nft-list{
+    margin-bottom: 50px;
 }

@@ -20,7 +20,7 @@
     text-align: right;
 }
 .nav-item{
-    padding: 0px 30px 20px 0px;
+    padding: 0px 17px 9px 0px;
     padding-top: 10px;
 }
 .connect-wallet{
@@ -39,7 +39,10 @@
     font-family: Grtsk-Zetta;
     font-style: normal;
     font-weight: normal;
-    font-size: 13   px;
+    font-size: 13px;
+}
+.connect-wallet:hover{
+    background: #BAC2FF;
 }
 .profile{
     padding: 10px 14px;
