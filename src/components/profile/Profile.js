@@ -61,12 +61,12 @@ export default function Profile (){
                     <div className="overview">
                         <div className="profile-section-title">Overview</div>
                         <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
-                        <div className="row">
+                        <div className="row collect-row">
                             <div className="col-md-9 col-lg-9">
                                 <div className="current-patronage">
-                                    <div>Current patronage</div>
-                                    <div>$ 2.200</div>
-                                    <div>1 ETH</div>
+                                    <div className="price-desc">Current patronage</div>
+                                    <div className="price-dollars">$ 2.200</div>
+                                    <div className="price-eth">1 ETH</div>
 
                                 </div>
                             </div>
@@ -77,22 +77,22 @@ export default function Profile (){
 
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-md-4 col-lg-4">
+                        <div className="row patronages-row" >
+                            <div className="col-md-4 col-lg-4 box">
                                 <div className="total-patronage">
                                     <div className="price-desc">  Total Patronage ↑</div>
-                                    <div className="price-dollars">$ 2.200</div>
-                                    <div className="price-eth">1 ETH</div>
+                                    <div className="price-dollars">$ 5.200</div>
+                                    <div className="price-eth">2.1 ETH</div>
                                 </div>
                             </div>
-                            <div className="col-md-4 col-lg-4">
+                            <div className="col-md-4 col-lg-4 box">
                                 <div className="deposit-patronage">
                                     <div className="price-desc">Deposited Patronage ↓</div>
-                                    <div className="price-dollars">$ 2.200</div>
-                                    <div className="price-eth">1 ETH</div>
+                                    <div className="price-dollars">$ 0</div>
+                                    <div className="price-eth">0 ETH</div>
                                 </div>
                             </div>
-                            <div className="col-md-4 col-lg-4">
+                            <div className="col-md-4 col-lg-4 box">
                                 <div className="deposit-patronage">
                                         
                                 </div>
@@ -108,7 +108,11 @@ export default function Profile (){
                                 <NFTEarning></NFTEarning>
                             </div>
                             <div className="col-md-8 col-lg-8">
-                                <div>jasncoincanlcan jclalcnjaclamkcamclakmcacmalcaca</div>
+                                <div className="listed-nft-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                                 <div className="row">
                                     <button className="col-md-6 col-lg-6 edit-listing-button">
                                             Edit nft listing
@@ -125,7 +129,7 @@ export default function Profile (){
                                 <NFTEarning></NFTEarning>
                             </div>
                             <div className="col-md-8 col-lg-8">
-                                <div>jasncoincanlcan jclalcnjaclamkcamclakmcacmalcaca</div>
+                                <div className="listed-nft-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                                 <div className="row">
                                     <button className="col-md-6 col-lg-6 edit-listing-button">
                                             Edit nft listing
@@ -137,103 +141,119 @@ export default function Profile (){
                                 </div>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-md-4 col-lg-4">
-                                <div className="total-patronage">
-                                    
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-4">
-                                <div className="deposit-patronage">
-                                    
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-4"></div>
-                        </div>
+
                     </div>
 
                     <div className="radical-nfts">
                         <div className="profile-section-title">Radical NFTs</div>
                         <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
                         <div className="row">
-                            <div className="col-md-9 col-lg-9">
-                                <div className="current-patronage"></div>
-                            </div>
-                            <div className="col-md-3 col-lg-3">
-                                <div className="collect-patronage">
-                                    
-                                </div>
 
-                            </div>
                         </div>
-                        <div className="row">
-                            <div className="col-md-4 col-lg-4">
-                                <div className="total-patronage">
-                                    
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-4">
-                                <div className="deposit-patronage">
-                                    
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-4"></div>
-                        </div>
+         
                     </div>
                     <div className="patronage-nfts">
                         <div className="profile-section-title">Patronage NFTs</div>
                         <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
-                        <div className="row">
-                            <div className="col-md-9 col-lg-9">
-                                <div className="current-patronage"></div>
+                        <div className="row patronage-table-nav">
+                        <div className="col-lg-4 col-md-4">
+                                Name
                             </div>
-                            <div className="col-md-3 col-lg-3">
-                                <div className="collect-patronage">
-                                    
-                                </div>
-
+                            <div className="col-lg-2 col-md-2">
+                                Listed price
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                patronage
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                yearly patronage
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                total patronage generated
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-md-4 col-lg-4">
-                                <div className="total-patronage">
-                                    
-                                </div>
+                        <div className="row patronage-table-row">
+                        <div className="col-lg-4 col-md-4">
+                        <span className="small-image"></span>
+
+                                Syntaxs Mistery
                             </div>
-                            <div className="col-md-4 col-lg-4">
-                                <div className="deposit-patronage">
-                                    
-                                </div>
+                            <div className="col-lg-2 col-md-2">
+                                1.5 ETH
                             </div>
-                            <div className="col-md-4 col-lg-4"></div>
+                            <div className="col-lg-2 col-md-2">
+                                10 %
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                $100
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                $200
+                            </div>
+                        </div>
+                        <div className="row patronage-table-row">
+                        <div className="col-lg-4 col-md-4">
+                        <span className="small-image"></span>
+
+                                Syntaxs Mistery
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                1.5 ETH
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                10 %
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                $100
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                $200
+                            </div>
+                        </div>
+                        <div className="row patronage-table-row">
+                            <div className="col-lg-4 col-md-4">
+                                <span className="small-image"></span>
+                                Syntaxs Mistery
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                
+                                1.5 ETH
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                10 %
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                $100
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                $200
+                            </div>
+                        </div>
+                        <div className="row patronage-table-row">
+                            <div className="col-lg-4 col-md-4">
+                            <span className="small-image"></span>
+
+                                Syntaxs Mistery
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                1.5 ETH
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                10 %
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                $100
+                            </div>
+                            <div className="col-lg-2 col-md-2">
+                                $200
+                            </div>
                         </div>
                     </div>
                     <div className="collected-nfts">
-                        <div className="profile-section-title" >Overview</div>
+                        <div className="profile-section-title" >Collected NFT</div>
                         <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
                         <div className="row">
-                            <div className="col-md-9 col-lg-9">
-                                <div className="current-patronage"></div>
-                            </div>
-                            <div className="col-md-3 col-lg-3">
-                                <div className="collect-patronage">
-                                    
-                                </div>
-
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-4 col-lg-4">
-                                <div className="total-patronage">
-                                    
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-4">
-                                <div className="deposit-patronage">
-                                    
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-lg-4"></div>
+    
                         </div>
                     </div>
                     <div className="account-settings">
@@ -241,30 +261,39 @@ export default function Profile (){
                         <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
                         <div className="row">
                             <div className="col-md-9 col-lg-9">
-                                <div className="current-patronage"></div>
+                                <div className="settings-field"></div>
                             </div>
                             <div className="col-md-3 col-lg-3">
-                                <div className="collect-patronage">
-                                    
-                                </div>
+                                <button className="settings-button">
+                                 Save new password 
+                                </button>
 
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-4 col-lg-4">
-                                <div className="total-patronage">
-                                    
-                                </div>
+                            <div className="col-md-9 col-lg-9">
+                                <div className="settings-field"></div>
                             </div>
-                            <div className="col-md-4 col-lg-4">
-                                <div className="deposit-patronage">
-                                    
-                                </div>
+                            <div className="col-md-3 col-lg-3">
+                                <button className="settings-button">
+                                    Save new email 
+                                </button>
+
                             </div>
-                            <div className="col-md-4 col-lg-4"></div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-9 col-lg-9">
+                                <div className="settings-field"></div>
+                            </div>
+                            <div className="col-md-3 col-lg-3">
+                                <button className="settings-button">
+                                    Connect new wallet 
+                                </button>
+
+                            </div>
                         </div>
                     </div>
-                    <Link className="text-link" to="/marketplace">
+                    <Link className="text-link back-to-marketplace" to="/marketplace ">
                         ← Back to marketplace
                     </Link>
                 </div>
