@@ -32,6 +32,65 @@
 .right-profile-menu{
     float: right;
 }
+.current-patronage{
+    width: 100%;
+    height: 190px;
+    background: #F7F7FC;
+    border-radius: 30px;
+}
+.collect-patronage{
+    width: 100%;
+    height: 183px;
+    background: #4946E6;
+    color: white;
+    border: none;
+    border-radius: 1000px;
+}
+.profile-section-desc{
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #808195;
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+}
+.profile-section-title{
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #313439;
+    margin-top: 100px;
+}
+.total-patronage{
+    width: 100%;
+    height: 190px;
+    background: #F7F7FC;
+    border-radius: 30px;
+}
+.deposit-patronage{
+    width: 100%;
+    height: 190px;
+    background: #F7F7FC;
+    border-radius: 30px;
+}
+
+.total-patronage{
+    width: 100%;
+    height: 190px;
+    background: #F7F7FC;
+    border-radius: 30px;
+}
+
 
 .right-profile{
     height: 1500px;

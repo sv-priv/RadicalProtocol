@@ -7,7 +7,11 @@
     border: none;
     float: right;
 }
+.nft-list-marketplace{
+    margin-top: 30px;
+    margin-left: 90px;
 
+}
 .single-nft-section{
     margin-top: 50px;
     margin-bottom:100px;
@@ -21,7 +25,6 @@
     position: absolute;
     margin-left: -33px;
     margin-top: 5px;
-
 
 }
 .marketplace{
@@ -60,6 +63,10 @@
     background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
     border-radius: 20px;
 }
+.buy-nft:hover{
+    background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
+
+}
 .view-nft{
     position: absolute;
     width: 202px;
@@ -68,6 +75,9 @@
     font-family: Grtsk-Zetta;
     background: #EDEFFF;
     border-radius: 20px;
+}
+.view-nft:hover{
+    background: #BAC2FF;
 }
 .username{
     font-family: Whyte;

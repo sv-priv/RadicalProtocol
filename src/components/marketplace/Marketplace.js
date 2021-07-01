@@ -67,7 +67,7 @@ export default function Marketplace (){
                     </div>
                 </div>
                 <div className="marketplace">
-                <div className="row nft-list">
+                <div className="row nft-list-marketplace">
                             <div className="col-md-3 col-lg-3" >
                                 <NFTEarning/>
                             </div>
@@ -81,7 +81,7 @@ export default function Marketplace (){
                                 <NFTEarning/>
                             </div>
                     </div>
-                    <div className="row nft-list">
+                    <div className="row nft-list-marketplace">
                             <div className="col-md-3 col-lg-3" >
                                 <NFTEarning/>
                             </div>
@@ -95,7 +95,7 @@ export default function Marketplace (){
                                 <NFTEarning/>
                             </div>
                     </div>
-                    <div className="row nft-list">
+                    <div className="row nft-list-marketplace">
                             <div className="col-md-3 col-lg-3" >
                                 <NFTEarning/>
                             </div>

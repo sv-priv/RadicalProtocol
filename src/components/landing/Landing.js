@@ -87,16 +87,19 @@ export default function Landing () {
                     </span>
 
                     <div className="row nft-list">
-                            <div className="col-md-3 col-lg-3" >
+                            <div className="col-md-2 col-lg-2 " style={{marginLeft:'36px'}} >
                                 <NFTEarning/>
                             </div>
-                            <div className="col-md-3 col-lg-3" >
+                            <div className="col-md-2 col-lg-2"style={{marginLeft:'36px'}}  >
                                 <NFTEarning/>
                             </div>
-                            <div className="col-md-3 col-lg-3" >
+                            <div className="col-md-2 col-lg-2" style={{marginLeft:'36px'}}  >
                                 <NFTEarning/>
                             </div>
-                            <div className="col-md-3 col-lg-3" >
+                            <div className="col-md-2 col-lg-2"  style={{marginLeft:'36px'}} >
+                                <NFTEarning/>
+                            </div>
+                            <div className="col-md-2 col-lg-2" style={{marginLeft:'36px'}}  >
                                 <NFTEarning/>
                             </div>
                     </div>
