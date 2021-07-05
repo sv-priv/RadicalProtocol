@@ -1,7 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link, Redirect } from 'react-router-dom';
-
+import { ethers } from 'ethers';
 import Landing from './landing/Landing';
 import Nav from './shared/nav/nav';
 import Footer from './shared/footer/footer';
@@ -13,7 +13,7 @@ import Search from './search/Search';
 import SingleNFT from './singleNFT/singleNFT';
 import Mint from './partials/Mint/Mint'
 import Error from './shared/error404/error404';
-
+import actions from '../state/actions/index';
 
 
 

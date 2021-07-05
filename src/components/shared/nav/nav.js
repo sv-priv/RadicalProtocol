@@ -1,25 +1,167 @@
 import React from 'react';
 import './nav.css'
 import { Link , Redirect }  from 'react-router-dom';
+import { connect } from 'react-redux';
+import { useCallback, useEffect, useState } from "react";
+import Web3Modal from 'web3modal';
+import { Contract, providers } from 'ethers';
+import { ERC20 } from '../../../ABIs/ERC20';
+import { RadicalTokenExample } from '../../../ABIs/Radical';
+import { RadicalManager } from '../../../ABIs/Radical';
 import Modal from 'react-modal';
-// import ConnectModal from '../../partials/ConnectModal/ConnectModal';
+import util from 'util'
+import { useSelector, useDispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { actionCreators } from '../../../state';
 
-//if global token === null don't show header
+import ipfsAPI from 'ipfs-http-client';
 
-export default function Nav (){
+
+const ipfs = ipfsAPI.create({host: 'ipfs.infura.io', port: '5001', protocol: 'https' });
+
+
+//  const dataRadical = {
+//    img: "",
+//    name: '',
+//    desc: '',
+//    copiesNumber: '',
+//    collection: '',
+//    price: '',
+//    patronage: ''
+//  }
+
+//  function Mint({ address, userProvider }) {
+//     const writeContracts = useContractLoader(userProvider)
+//     // const tx = Transactor(userProvider)
+//     // const initialFormData = Object.freeze({
+//     //   name: "Chimp",
+//     //   description: "Chimp",
+//     //   file: "https://images.squarespace-cdn.com/content/v1/575fa285e321408871d8ed19/1594709938301-QHU9O68TY77LR2F00FGV/ke17ZwdGBToddI8pDm48kE2GkdnIr5SO-CACT9XyGZlZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGVc7K5CECqctQZfnE8sPkLF_B0_4y0xtJXb2emPG5POEtYYWjJQ7oNp_jeQjbXLko/Chimp1_moncur_0.7mx1m.jpg?format=2500w",
+//     //   patronageRate: "50",
+//     //   newPrice: "0.25",
+//     //   checked: false
+//     // })
+//     // const [formData, updateFormData] = useState(initialFormData);
+  
+  
+//     // const handleChange = (e) => {
+//     //   updateFormData({
+//     //     ...formData,
+  
+//     //     [e.target.name]: e.target.value
+  
+//     //   });
+//     // };
+  
+//     // const handleSubmit = async (e) => {
+//     //   e.preventDefault()
+//     //   console.log(formData);
+//     //   await mintFromFormOutput(formData);
+//     // };
+  
+  
+//     const mintFromFormOutput = async (data) => {
+//       const {
+//         name,
+//         description,
+//         image,
+//         artist,
+//         patronageRate,
+//         newPrice,
+//       } = data;
+  
+//       const radicalToken = {
+//         name,
+//         description,
+//         image,
+//         attributes: [
+//           {
+//             trait_type: "artist",
+//             value: artist
+//           }
+//         ]
+//       };
+  
+//       const patronageToken = {
+//         name: `${patronageRate}% patronage on ${name}`,
+//         description: `Pay to the bearer on demand ${patronageRate}%`,
+//         image,
+//         attributes: [
+//           {
+//             trait_type: "Patronage Rate",
+//             value: patronageRate
+//           }
+//         ]
+//       };
+  
+//       console.log("Uploading radical ..")
+//       console.log("Uploading patronage...")
+//       const r = await ipfs.add(JSON.stringify(radicalToken))
+//       const p = await ipfs.add(JSON.stringify(patronageToken))
+//       console.log(r, p);
+  
+//       await tx(writeContracts.RadicalManager.mint(address, utils.parseEther(newPrice), parseInt(patronageRate), p.path, r.path))
+//     }
+//   }
+
+
+function Nav (){
+
+    const state = useSelector((state) => state);
+    const dispatch = useDispatch()
+    const {addProvider} =  bindActionCreators( actionCreators, dispatch)
+
+    const web3Modal = new Web3Modal({
+        cacheProvider: true, // optional
+    });
+    const [ethersProviderState, setEthersProviderState] = useState(null);
+
+    const loadWeb3Modal = (async () => {
+
+        const provider = await web3Modal.connect();
+        const ethersProvider = new providers.Web3Provider(provider);
+        // window.localStorage.setItem("ethersp", JSON.stringify(ethersProvider))
+        window.localStorage.setItem('eth', ethersProvider.connection)
+        const providerLocal = window.localStorage.getItem('eth')   
+        // console.log(providerLocal.toString())
+       if(providerLocal.toString()){
+            setIsOpen(false);
+            setIsConnected("hidden");
+            alert("You are connected");
+
+        }
+
+
+        const contract = new Contract("0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48", ERC20, ethersProvider)
+        const radicalExample = new Contract("0x03737B8f994ba43093fB20929CB4c6403a9eEdD8", RadicalTokenExample, ethersProvider)
+        const radicalManager = new Contract("0x48A3fa9cf12675C6cB108999332ca55ceEb01b48", RadicalManager, ethersProvider)
+
+        const [ address ]  = await ethersProvider.listAccounts();
+        const balance = await contract.functions.balanceOf("0x17bA00bf3792CAD107966806949731D4b1C656A8");
+        const decimals = await contract.functions.decimals();
+        console.log(parseFloat(balance)/10**parseInt(decimals));
+        const symbol = await contract.functions.symbol();
+
+    });
+
+    useEffect(() =>{
+      console.log("ethersProvides" + ethersProviderState)
+    }, [ethersProviderState])
+    
 
     const [modalIsOpen, setIsOpen] = React.useState(false);
-    const [isConnected, setIsConnected] = React.useState(false);
+    const [isConnected, setIsConnected] = React.useState(null);
 
 
     function connectWallet(){
         setIsOpen(true)
     }
     function connectMetamask(){
-        setIsConnected(true);
         setIsOpen(false);
     }
 
+      const sss = window.localStorage.getItem('ethersp')
+      console.log(sss)
     const connectModal = {
         content:{
             position: 'absolute',
@@ -50,8 +192,8 @@ export default function Nav (){
                     
                     <div className="col-md-4 col-lg-4 mid-content">
                     <Link className="text-link" to="/marketplace"><span className="nav-item">Marketplace</span></Link>
-                    <Link className="text-link" to="/documentation"><span className="nav-item">Documentation</span></Link>
-                    <Link className="text-link" to="/about"><span className="nav-item">About</span></Link>
+                    <a href="https://radical.gitbook.io/radical-nft/" className="text-link nav-item" >Documentation</a>
+                    <a href="https://radical.gitbook.io/radical-nft/" className="text-link nav-item" >About</a>
                     </div>
                     <div className="col-md-4 col-lg-4 right-content">
                     <Link className="text-link" to="/search">
@@ -66,7 +208,7 @@ export default function Nav (){
                     <Link to="/mint"  className="text-link">
                     <span className="mint nav-item"> Mint</span>
                     </Link>
-                    <button className="connect-wallet" onClick={connectWallet} isConnected={!isConnected}> Connect Wallet</button>
+                    <button className="connect-wallet" onClick={connectWallet} isConnected> Connect Wallet</button>
                     <Link to="/profile" className="text-link">
                         <span className="profile" isConnected={isConnected}> U </span>
                     </Link>
@@ -75,7 +217,6 @@ export default function Nav (){
                     <Modal 
                         isOpen={modalIsOpen}
                         style={connectModal}
-
                         >
                         <button onClick={() =>setIsOpen(false)} className="button-close">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,8 +226,8 @@ export default function Nav (){
 
                         <div className="connect-wallet-title">Connect your wallet</div>
                         <div className="connect-wallet-desc">By connecting your wallet, you agree to our Terms of Service and our Privacy Policy.</div>
-                        <button className="connect-wallet-button" onClick={connectMetamask}> Connect with Metamask</button><br></br>
-                        <button className="connect-wallet-button2"  onClick={connectMetamask}> Connect with other wallet</button>
+                        <button className="connect-wallet-button" onClick={loadWeb3Modal}> Connect with Metamask</button><br></br>
+                        <button className="connect-wallet-button2"  onClick={loadWeb3Modal} disabled> Connect with other wallet</button>
 
 
                     </Modal>
@@ -97,3 +238,5 @@ export default function Nav (){
      );
     
 }
+
+export default  Nav;
