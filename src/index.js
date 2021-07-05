@@ -5,8 +5,6 @@ import './index.css';
 import './fonts.css';
 import App from './components/App';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducers from './reducers';
 import { store } from "./state/store"
 
 <style>

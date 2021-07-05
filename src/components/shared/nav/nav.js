@@ -14,10 +14,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from '../../../state';
 
-import ipfsAPI from 'ipfs-http-client';
 
 
-const ipfs = ipfsAPI.create({host: 'ipfs.infura.io', port: '5001', protocol: 'https' });
 
 
 //  const dataRadical = {
@@ -193,7 +191,7 @@ function Nav (){
                     <div className="col-md-4 col-lg-4 mid-content">
                     <Link className="text-link" to="/marketplace"><span className="nav-item">Marketplace</span></Link>
                     <a href="https://radical.gitbook.io/radical-nft/" className="text-link nav-item" >Documentation</a>
-                    <a href="https://radical.gitbook.io/radical-nft/" className="text-link nav-item" >About</a>
+                    <a href="https://showcase.ethglobal.co/hackmoney2021/radical" className="text-link nav-item" >About</a>
                     </div>
                     <div className="col-md-4 col-lg-4 right-content">
                     <Link className="text-link" to="/search">
