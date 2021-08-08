@@ -1,9 +1,10 @@
 import React from 'react'
 import Modal from 'react-modal'
+import { Field, reduxForm } from 'redux-form'
 import { Link } from 'react-router-dom'
 import './Mint.css'
 
-export default function  Mint() {
+function  Mint() {
     const connectModal = {
         content:{
             position: 'absolute',
@@ -16,6 +17,7 @@ export default function  Mint() {
             align: 'center'
         }
     }
+
 
     const [uploadActive, setUploadActive] = React.useState('active');
     const [infoActive, setInfoActive] = React.useState(null);
@@ -74,7 +76,56 @@ export default function  Mint() {
     function finishMint(){
         setPriceIsOpen(true);
     }
-
+    function renderInput(formProps){
+        return <input
+            onChange={formProps.input.onChange}
+            value={formProps.input.value}/>
+    }
+    function nftCopiesInput(formProps){
+        return <div>
+            <input
+            onChange={formProps.input.onChange}
+            value={formProps.input.value}
+            className="nft-copies"
+            placeholder="NUMBER OF COPIES"/>
+        </div>
+    }
+    function nftDescInput(formProps){
+        return <div>
+            <input
+            onChange={formProps.input.onChange}
+            value={formProps.input.value}
+            className="nft-desc"
+            placeholder="DESCRIPITON"/>
+        </div>
+    }
+    function nftNameInput(formProps){
+        return <div>
+            <input
+            onChange={formProps.input.onChange}
+            value={formProps.input.value}
+            className="nft-name"
+            placeholder="NFT NAME" />
+        </div>
+    }
+    function nftPriceInput(formProps){
+        return <div>
+            <input
+            onChange={formProps.input.onChange}
+            value={formProps.input.value}
+            className="nft-mint-price"
+            placeholder="PRICE" />
+        </div>
+    }
+    function nftPatronageInput(formProps){
+        return <div>
+            <input
+            onChange={formProps.input.onChange}
+            value={formProps.input.value}
+            className="nft-mint-patronage"
+            placeholder="PATRONAGE" />
+        </div>
+    }
 
     return(
         <div>
@@ -91,7 +142,11 @@ export default function  Mint() {
                         <span onClick={addCollection} className={collectionActive} >Add to collection → </span>
                         <span onClick={addPrice} className={priceActive} > Add Price and Patronage →</span>
                     </div>
+                    
                     <div className="nft-droparea">
+                        <form>
+                        <Field name="nftimage" component={renderInput}>                        </Field>
+
 
                         <div className="nft-droparea-desc">
                         Drag and Drop your NFT content
@@ -114,7 +169,10 @@ export default function  Mint() {
                                 MP4
                             </span>
                         </div>
+                        </form>
+
                     </div>
+
                     <div className="button-next" onClick={addInfo}>
                             Next
                     </div>
@@ -134,15 +192,9 @@ export default function  Mint() {
                         <span onClick={addPrice} className={priceActive} > Add Price and Patronage →</span>
                     </div>
                     <div className="nft-info">
-                        <div>
-                            <input type="text" className="nft-name" placeholder="NFT NAME"  />
-                        </div>
-                        <div >
-                            <input type="textarea" className="nft-desc" placeholder="DESCRIPITON"  />
-                        </div>
-                        <div >
-                            <input type="textarea" className="nft-copies" placeholder="Number of copies"  />
-                        </div>
+                        <Field name="nft-name" component={nftNameInput}></Field>
+                        <Field name="nft-desc" component={nftDescInput}></Field>
+                        <Field name="nft-copies" component={nftCopiesInput}></Field>
                     </div>
                     <div className="button-next" onClick={addCollection}>
                             Next
@@ -208,16 +260,10 @@ export default function  Mint() {
                         <span onClick={addPrice} className={priceActive} > Add Price and Patronage →</span>
                     </div>
                     <div className="nft-pricing">
-                        <div>
-                            <input type="text" className="nft-mint-price" placeholder="Price"  />
-                        </div>
-                        <div >
-                            <input type="text" className="nft-mint-patronage" placeholder="Patronage"  />
-                        </div>
-
+                        <Field name="nft-price" component={nftPriceInput}></Field>
+                        <Field name="nft-patronage" component={nftPatronageInput}></Field>
                     </div>
-                    <Link to="/profile" className="text-link">
-
+                    <Link to="/profile" className="text-link">  
                     <div className="button-next" onClick={addCollection}>
                             Mint
                     </div>
@@ -227,3 +273,6 @@ export default function  Mint() {
     </div>
     )
 }
+export default reduxForm({
+    form: 'mintForm'
+})(Mint);

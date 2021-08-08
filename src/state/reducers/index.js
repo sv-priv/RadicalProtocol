@@ -1,19 +1,28 @@
 import { combineReducers } from "redux";
-
-const ethersProviderReducer = (ethersProvider = null, action) =>{
+import { reducer as formReducer } from "redux-form"
+ 
+const testProviderReducer = (state={age:0}, action) =>{
+    // console.log(state,action)
 
     switch(action.type) {
-        case "ethersProvider":
-            ethersProvider = action.payload
-            return action.payload;
+        case "objectTest":
+            return {...state, age:action.payload}
         default : 
-            return ethersProvider
+            return state
     }
-    return ethersProvider
-
+}
+const ethersProviderReducer = (state = {}, action)=>{
+    switch(action.type){
+        case "ethersProvider":
+            return {...state, ethersProvider: action.payload}
+        default : 
+            return state
+    }
 }
 
-
 export default combineReducers({
+    testProvider: testProviderReducer,
+    form: formReducer,
     ethersProvider: ethersProviderReducer
+    
 });

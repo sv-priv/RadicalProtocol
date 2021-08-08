@@ -210,3 +210,6 @@
 .collections span{
     margin-right: 2%;
 }
+input:hover{
+    border: none!important;
+}

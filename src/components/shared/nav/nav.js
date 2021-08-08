@@ -4,7 +4,7 @@ import { Link , Redirect }  from 'react-router-dom';
 import { connect } from 'react-redux';
 import { useCallback, useEffect, useState } from "react";
 import Web3Modal from 'web3modal';
-import { Contract, providers } from 'ethers';
+import { Contract, ethers, providers } from 'ethers';
 import { ERC20 } from '../../../ABIs/ERC20';
 import { RadicalTokenExample } from '../../../ABIs/Radical';
 import { RadicalManager } from '../../../ABIs/Radical';
@@ -13,10 +13,6 @@ import util from 'util'
 import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from '../../../state';
-
-
-
-
 
 //  const dataRadical = {
 //    img: "",
@@ -105,30 +101,38 @@ import { actionCreators } from '../../../state';
 
 function Nav (){
 
-    const state = useSelector((state) => state);
+      
+    const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [isConnected, setIsConnected] = React.useState(false);
     const dispatch = useDispatch()
-    const {addProvider} =  bindActionCreators( actionCreators, dispatch)
+
+    if(!isConnected){
+        const provider = async () => await web3Modal.connect();
+        const ethersProvider = new providers.Web3Provider(provider);
+        dispatch({ type:"ethersProvider", payload: ethersProvider})
+        setIsConnected(true)
+    }
+
+    useEffect( async () =>{
+
+    }, [])
+
+    console.log(isConnected)
+
+    const et = useSelector((state) => state.ethersProvider);
+    console.log(et)
+    const reduxState = useSelector((state) => state.testProvider);
 
     const web3Modal = new Web3Modal({
         cacheProvider: true, // optional
     });
-    const [ethersProviderState, setEthersProviderState] = useState(null);
 
     const loadWeb3Modal = (async () => {
 
+    
         const provider = await web3Modal.connect();
         const ethersProvider = new providers.Web3Provider(provider);
-        // window.localStorage.setItem("ethersp", JSON.stringify(ethersProvider))
-        window.localStorage.setItem('eth', ethersProvider.connection)
-        const providerLocal = window.localStorage.getItem('eth')   
-        // console.log(providerLocal.toString())
-       if(providerLocal.toString()){
-            setIsOpen(false);
-            setIsConnected("hidden");
-            alert("You are connected");
-
-        }
-
+        dispatch({ type:"ethersProvider", payload:ethersProvider})
 
         const contract = new Contract("0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48", ERC20, ethersProvider)
         const radicalExample = new Contract("0x03737B8f994ba43093fB20929CB4c6403a9eEdD8", RadicalTokenExample, ethersProvider)
@@ -142,24 +146,14 @@ function Nav (){
 
     });
 
-    useEffect(() =>{
-      console.log("ethersProvides" + ethersProviderState)
-    }, [ethersProviderState])
-    
-
-    const [modalIsOpen, setIsOpen] = React.useState(false);
-    const [isConnected, setIsConnected] = React.useState(null);
 
 
     function connectWallet(){
         setIsOpen(true)
     }
-    function connectMetamask(){
-        setIsOpen(false);
-    }
 
-      const sss = window.localStorage.getItem('ethersp')
-      console.log(sss)
+    //   const sss = window.localStorage.getItem('ethersp')
+    //   console.log(sss)
     const connectModal = {
         content:{
             position: 'absolute',
@@ -206,9 +200,9 @@ function Nav (){
                     <Link to="/mint"  className="text-link">
                     <span className="mint nav-item"> Mint</span>
                     </Link>
-                    <button className="connect-wallet" onClick={connectWallet} isConnected> Connect Wallet</button>
+                    <button className="connect-wallet" onClick={connectWallet} style={{ display: isConnected ? "none" : "block" }}> Connect Wallet</button>
                     <Link to="/profile" className="text-link">
-                        <span className="profile" isConnected={isConnected}> U </span>
+                        <span className="profile"> U </span>
                     </Link>
 
                     </div>
