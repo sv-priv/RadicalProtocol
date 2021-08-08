@@ -14,143 +14,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from '../../../state';
 
-//  const dataRadical = {
-//    img: "",
-//    name: '',
-//    desc: '',
-//    copiesNumber: '',
-//    collection: '',
-//    price: '',
-//    patronage: ''
-//  }
-
-//  function Mint({ address, userProvider }) {
-//     const writeContracts = useContractLoader(userProvider)
-//     // const tx = Transactor(userProvider)
-//     // const initialFormData = Object.freeze({
-//     //   name: "Chimp",
-//     //   description: "Chimp",
-//     //   file: "https://images.squarespace-cdn.com/content/v1/575fa285e321408871d8ed19/1594709938301-QHU9O68TY77LR2F00FGV/ke17ZwdGBToddI8pDm48kE2GkdnIr5SO-CACT9XyGZlZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVGVc7K5CECqctQZfnE8sPkLF_B0_4y0xtJXb2emPG5POEtYYWjJQ7oNp_jeQjbXLko/Chimp1_moncur_0.7mx1m.jpg?format=2500w",
-//     //   patronageRate: "50",
-//     //   newPrice: "0.25",
-//     //   checked: false
-//     // })
-//     // const [formData, updateFormData] = useState(initialFormData);
-  
-  
-//     // const handleChange = (e) => {
-//     //   updateFormData({
-//     //     ...formData,
-  
-//     //     [e.target.name]: e.target.value
-  
-//     //   });
-//     // };
-  
-//     // const handleSubmit = async (e) => {
-//     //   e.preventDefault()
-//     //   console.log(formData);
-//     //   await mintFromFormOutput(formData);
-//     // };
-  
-  
-//     const mintFromFormOutput = async (data) => {
-//       const {
-//         name,
-//         description,
-//         image,
-//         artist,
-//         patronageRate,
-//         newPrice,
-//       } = data;
-  
-//       const radicalToken = {
-//         name,
-//         description,
-//         image,
-//         attributes: [
-//           {
-//             trait_type: "artist",
-//             value: artist
-//           }
-//         ]
-//       };
-  
-//       const patronageToken = {
-//         name: `${patronageRate}% patronage on ${name}`,
-//         description: `Pay to the bearer on demand ${patronageRate}%`,
-//         image,
-//         attributes: [
-//           {
-//             trait_type: "Patronage Rate",
-//             value: patronageRate
-//           }
-//         ]
-//       };
-  
-//       console.log("Uploading radical ..")
-//       console.log("Uploading patronage...")
-//       const r = await ipfs.add(JSON.stringify(radicalToken))
-//       const p = await ipfs.add(JSON.stringify(patronageToken))
-//       console.log(r, p);
-  
-//       await tx(writeContracts.RadicalManager.mint(address, utils.parseEther(newPrice), parseInt(patronageRate), p.path, r.path))
-//     }
-//   }
-
 
 function Nav (){
 
-      
-    const [modalIsOpen, setIsOpen] = React.useState(false);
-    const [isConnected, setIsConnected] = React.useState(false);
-    const dispatch = useDispatch()
-
-    if(!isConnected){
-        const provider = async () => await web3Modal.connect();
-        const ethersProvider = new providers.Web3Provider(provider);
-        dispatch({ type:"ethersProvider", payload: ethersProvider})
-        setIsConnected(true)
-    }
-
-    useEffect( async () =>{
-
-    }, [])
-
-    console.log(isConnected)
-
-    const et = useSelector((state) => state.ethersProvider);
-    console.log(et)
-    const reduxState = useSelector((state) => state.testProvider);
-
-    const web3Modal = new Web3Modal({
-        cacheProvider: true, // optional
-    });
-
-    const loadWeb3Modal = (async () => {
-
-    
-        const provider = await web3Modal.connect();
-        const ethersProvider = new providers.Web3Provider(provider);
-        dispatch({ type:"ethersProvider", payload:ethersProvider})
-
-        const contract = new Contract("0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48", ERC20, ethersProvider)
-        const radicalExample = new Contract("0x03737B8f994ba43093fB20929CB4c6403a9eEdD8", RadicalTokenExample, ethersProvider)
-        const radicalManager = new Contract("0x48A3fa9cf12675C6cB108999332ca55ceEb01b48", RadicalManager, ethersProvider)
-
-        const [ address ]  = await ethersProvider.listAccounts();
-        const balance = await contract.functions.balanceOf("0x17bA00bf3792CAD107966806949731D4b1C656A8");
-        const decimals = await contract.functions.decimals();
-        console.log(parseFloat(balance)/10**parseInt(decimals));
-        const symbol = await contract.functions.symbol();
-
-    });
-
-
-
-    function connectWallet(){
-        setIsOpen(true)
-    }
 
     //   const sss = window.localStorage.getItem('ethersp')
     //   console.log(sss)
@@ -183,7 +49,6 @@ function Nav (){
                     </div>
                     
                     <div className="col-md-4 col-lg-4 mid-content">
-                    <Link className="text-link" to="/marketplace"><span className="nav-item">Marketplace</span></Link>
                     <a href="https://radical.gitbook.io/radical-nft/" className="text-link nav-item" >Documentation</a>
                     <a href="https://showcase.ethglobal.co/hackmoney2021/radical" className="text-link nav-item" >About</a>
                     </div>
@@ -194,35 +59,11 @@ function Nav (){
                         <circle cx="5.5" cy="5" r="4.5" stroke="#282828" stroke-linejoin="round"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2715 12.5L8 8.27523L8.72845 7.5L13 11.7248L12.2715 12.5Z" fill="#282828"/>
                     </svg>
-                        Search
+                        DEMO APP
                     </span>
-                    </Link>
-                    <Link to="/mint"  className="text-link">
-                    <span className="mint nav-item"> Mint</span>
-                    </Link>
-                    <button className="connect-wallet" onClick={connectWallet} style={{ display: isConnected ? "none" : "block" }}> Connect Wallet</button>
-                    <Link to="/profile" className="text-link">
-                        <span className="profile"> U </span>
                     </Link>
 
                     </div>
-                    <Modal 
-                        isOpen={modalIsOpen}
-                        style={connectModal}
-                        >
-                        <button onClick={() =>setIsOpen(false)} className="button-close">
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8249 1.25384C22.327 1.73925 22.327 2.52624 21.8248 3.01165L13.0351 11.5077L21.8249 20.0037C22.327 20.4891 22.327 21.2761 21.8249 21.7615C21.3227 22.2469 20.5085 22.2469 20.0063 21.7615L11.2166 13.2655L2.42682 21.7615C1.92464 22.2469 1.11044 22.2469 0.608255 21.7615C0.106072 21.2761 0.106072 20.4891 0.608255 20.0037L9.39799 11.5077L0.608256 3.01165C0.106073 2.52624 0.106073 1.73925 0.608255 1.25384C1.11044 0.76844 1.92464 0.76844 2.42682 1.25384L11.2166 9.74989L20.0063 1.25384C20.5085 0.76844 21.3227 0.76844 21.8249 1.25384Z" fill="#1E1E1E" fill-opacity="0.75"/>
-                            </svg>
-                        </button>
-
-                        <div className="connect-wallet-title">Connect your wallet</div>
-                        <div className="connect-wallet-desc">By connecting your wallet, you agree to our Terms of Service and our Privacy Policy.</div>
-                        <button className="connect-wallet-button" onClick={loadWeb3Modal}> Connect with Metamask</button><br></br>
-                        <button className="connect-wallet-button2"  onClick={loadWeb3Modal} disabled> Connect with other wallet</button>
-
-
-                    </Modal>
 
                     </div>
             </div>

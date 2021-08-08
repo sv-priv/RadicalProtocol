@@ -6,37 +6,16 @@ export default function Footer (){
     return(
         <div className="row footer-align">
 
-            <div className="row socials">
-                <div className="col-md-3 col-lg-3 social-item">
-                <div className="socials-text"> Twitter</div>
-
-                </div>
-                <div className="col-md-3 col-lg-3 social-item">
-                        
-                        <div className="socials-text"> Discord</div>
-
-                </div>
-                <div className="col-md-3 col-lg-3 social-item">
-                        <div className="socials-text"> Forum</div>
-                       
-                </div>
-                <div className="col-md-3 col-lg-3 social-item">
-                        <div className="socials-text">Contracts</div>
-
-                        
-                </div>
-            </div>
             <div className="first-section">
-                <div className="footer-item">Explore</div>
-                <div className="footer-item"> Manage</div>
-                <div className="footer-item">Mint</div>
-                <div className="footer-item">Documentation</div>
+                <a className="footer-item">Documentation</a>
             </div>
 
             <div className="second-section">
-                <div className="footer-item">My Account</div>
-                <div className="footer-item">Help</div>
-                <div className="footer-item">Contact Us</div>
+                <div className="footer-item"><a href="">Twitter</a></div>
+                <div className="footer-item"><a href="">Discord</a></div>
+                <div className="footer-item"><a href="">Telegram</a></div>
+                <div className="footer-item"><a href="">Github</a></div>
+
             </div>
 
             <div className="third-section">

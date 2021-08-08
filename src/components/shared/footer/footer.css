@@ -41,3 +41,9 @@
     --bs-gutter-x: 0!important;
      --bs-gutter-y: 0 !important;
 }
+a{
+    text-decoration: none;
+    color: #212529;
+}
+
+

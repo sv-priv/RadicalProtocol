@@ -166,6 +166,46 @@
     animation-timing-function: linear;
     max-width: 100%;
 }
+.user-email{    
+    padding-left: 2%;
+    width: 430px;
+    font-family: Grtsk-Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #4A4E52;
+    height: 54px;
+    border: none!important;
+    background: #F0F1F9;
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+.button-next{
+    width: 429px;
+    height: 110px;
+    left: 455px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 40px;
+    font-family: Grtsk-Zetta;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
+    border-radius: 30px;
+}
+.button-next:hover{
+    background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
+}
 .documentation{
     background-color: white;
     margin-top: 100px;

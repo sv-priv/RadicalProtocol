@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Landing.css';
 import NFTEarning from '../partials/NFTEarning/NFTEarning';
 import Nav from '../shared/nav/nav';
+import { Field, reduxForm } from 'redux-form'
 import { Link , Redirect }  from 'react-router-dom';
 import Footer from '../shared/footer/footer';
 
@@ -63,57 +64,6 @@ export default function Landing () {
 
                 </div>
 
-                <div className="prices moving-prices">
-                    <span> Total volume 1 day <span className="total-volume">+ $12209</span></span>
-                    <span> Total volume 1 week <span className="total-volume">+ $12209</span></span>
-                    <span> Total volume 1 month <span className="total-volume">+ $12209</span></span>
-                    <span> Total volume 1 day <span className="total-volume">+ $12209</span></span>
-
-                    
-                </div>
-                <div className="row earning-nfts">
-                    <div className="title title-earning-section">These NFTS are earning</div>
-                    <span className="button-to-left">
-                        <svg width="71" height="56" viewBox="0 0 71 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="71" height="56" rx="28" transform="matrix(-1 0 0 1 71 0)" fill="#EDEFFF"/>
-                            <path d="M35.6185 26.54L32.9985 29.1H40.2385V30.52H32.9985L35.6385 33.1L34.6985 34.06L30.4385 29.8L34.6985 25.56L35.6185 26.54Z" fill="#B2B2C1"/>
-                        </svg>
-                    </span>
-                    <span className="button-to-right">
-                        <svg width="71" height="56" viewBox="0 0 71 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="71" height="56" rx="28" fill="#EDEFFF"/>
-                            <path d="M35.3815 26.54L38.0015 29.1H30.7615V30.52H38.0015L35.3615 33.1L36.3015 34.06L40.5615 29.8L36.3015 25.56L35.3815 26.54Z" fill="#313439"/>
-                        </svg>
-                    </span>
-
-                    <div className="row nft-list">
-                            <div className="col-md-2 col-lg-2 " style={{marginLeft:'36px'}} >
-                                <NFTEarning/>
-                            </div>
-                            <div className="col-md-2 col-lg-2"style={{marginLeft:'36px'}}  >
-                                <NFTEarning/>
-                            </div>
-                            <div className="col-md-2 col-lg-2" style={{marginLeft:'36px'}}  >
-                                <NFTEarning/>
-                            </div>
-                            <div className="col-md-2 col-lg-2"  style={{marginLeft:'36px'}} >
-                                <NFTEarning/>
-                            </div>
-                            <div className="col-md-2 col-lg-2" style={{marginLeft:'36px'}}  >
-                                <NFTEarning/>
-                            </div>
-                    </div>
-                        <Link  to="/marketplace" className="text-link"><div className="explore" >EXPLORE ALL → </div></Link>
-                </div>
-                <div className="prices moving-prices">
-                    <span> Revenue 1 day <span className="total-revenue">+ $12209</span></span>
-                    <span> Revenue 1 week <span className="total-revenue">+ $12209</span></span>
-                    <span> Revenue 1 month <span className="total-revenue">+ $12209</span></span>
-                    <span> Revenue  1 day <span className="total-revenue">+ $12209</span></span>
-                    <span> Revenue 1 week <span className="total-revenue">+ $12209</span></span>
-
-                </div>
-        
                 <div className="row documentation">
                     <div className="title title-documentation">
                     A revenue model designed for creators
@@ -267,6 +217,23 @@ export default function Landing () {
 
                     </div>
                 </div>
+               
+                <div className="title-mint">
+                        Subscribe for early access
+                    </div>
+
+                    <div className="nft-info">
+
+                    <input 
+ 
+                        type="email"
+                        className="user-email"
+                        placeholder="Email" />                  
+                    </div>
+                    <div className="button-next" >
+                            Subscribe
+                    </div>
+            
             </div>
             <Footer/>
         </div>
