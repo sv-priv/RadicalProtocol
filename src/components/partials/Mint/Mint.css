@@ -60,7 +60,8 @@
     border-radius: 30px;
 }
 .button-next:hover{
-    background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);}
+    background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
+}
     
 .nft-droparea{
     width: 824px;

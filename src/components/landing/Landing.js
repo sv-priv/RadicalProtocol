@@ -10,6 +10,13 @@ import Footer from '../shared/footer/footer';
 
 export default function Landing () {
 
+    function handleSubmit(data){
+    
+    }
+
+    function handleChange(data){
+    
+    }
 
 
     return(
@@ -17,7 +24,7 @@ export default function Landing () {
             <Nav/>
             <div className="landing-align">
 
-                <div className="row landing-animation">
+                <div className="row landing-animation" >
                     <div className="col-md-3">
 
                     </div>
@@ -29,46 +36,8 @@ export default function Landing () {
                     </div>
                 </div>
 
-                <div className="row total-generated">
-                    <div className="col-md-4">
-
-                    </div>
-                    <div className="col-md-4">
-                            <div>Total generated since inception
-                            </div>
-                            <div className="number-animation"> $ 1.546.691</div>
-                    </div>
-                    <div className="col-md-4">
-
-                    </div>
-                </div>
-
-                <div className="row buttons-landing">
-                    <div className="col-lg-1 col-md-1"></div>
-                    <div className="col-lg-5 col-md-5 read-documentation-button">
-                        <div className="button-text">
-                        <Link className="text-link" to="/documentation">
-                            Read Documentation
-                        </Link>
-                        
-                        </div>
-                    </div>
-                    <div className="col-lg-5 col-md-5 browse-button">
-                        <div className="button-text">
-                            <Link className="text-link" to="/marketplace">
-                                Browse
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="col-lg-1 col-md-1"></div>
-
-                </div>
-
                 <div className="row documentation">
-                    <div className="title title-documentation">
-                    A revenue model designed for creators
 
-                    </div>
                     <div className="about">
                         <div className="row">
                             <div className="col-md-4 col-lg-4">
@@ -218,21 +187,27 @@ export default function Landing () {
                     </div>
                 </div>
                
-                <div className="title-mint">
-                        Subscribe for early access
+                <div className="row documentation">
+                <div className="about subscribe">
+                        Subscribe for early protocol access,
+                        airdrops and updates on the project.
                     </div>
 
                     <div className="nft-info">
-
+                    <form onSubmit={handleSubmit}>
                     <input 
- 
                         type="email"
                         className="user-email"
-                        placeholder="Email" />                  
-                    </div>
+                        placeholder="Email"
+                        
+                        onChange={handleChange} />                  
                     <div className="button-next" >
                             Subscribe
+                    </div> 
+                   </form>
+
                     </div>
+                </div>
             
             </div>
             <Footer/>

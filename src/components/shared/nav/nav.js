@@ -53,7 +53,7 @@ function Nav (){
                     <a href="https://showcase.ethglobal.co/hackmoney2021/radical" className="text-link nav-item" >About</a>
                     </div>
                     <div className="col-md-4 col-lg-4 right-content">
-                    <Link className="text-link" to="/search">
+                    <a className="text-link" href="https://dev.dou6rizh5vap5.amplifyapp.com/" >
                     <span className="search nav-item">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="5.5" cy="5" r="4.5" stroke="#282828" stroke-linejoin="round"/>
@@ -61,7 +61,7 @@ function Nav (){
                     </svg>
                         DEMO APP
                     </span>
-                    </Link>
+                    </a>
 
                     </div>
 
