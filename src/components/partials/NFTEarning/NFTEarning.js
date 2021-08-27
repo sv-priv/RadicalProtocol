@@ -4,8 +4,7 @@ import {Link } from 'react-router-dom'
 
 export default function NFTEarning (props){
     const imgStyle = {
-        maxWidth: "316px",
-        maxHeight: "316px",
+       width: "100%"
     };
 
 
