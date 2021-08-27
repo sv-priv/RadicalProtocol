@@ -2,17 +2,22 @@ import React from 'react';
 import "./NFTEarning.css"
 import {Link } from 'react-router-dom'
 
-export default function NFTEarning (){
+export default function NFTEarning (props){
+    const imgStyle = {
+        maxWidth: "316px",
+        maxHeight: "316px",
+    };
 
 
     return(
-        <div>
-                <div className="card">
-                    <div className="card-img-top"  alt=""></div>
-                    <div className="card-body">
+            <div className="card">
+                    <div className="card-img-top"  alt="">
+                        <img  style={imgStyle} src={props.image}></img>
+                    </div>
+                    <div className="card-body" >
                             <div className="title-earning">
                                 <Link to="/singlenft"className="text-link">
-                                    Spherical Harmony
+                                    Talking Crypto Premium
                                 </Link>
                                 <span className="file-format">
                                     <svg width="42" height="25" viewBox="0 0 42 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,8 +27,8 @@ export default function NFTEarning (){
                                 </span>
                             </div>
                         <div className="author-earning">
-                            <span className=""><img src=""></img> </span>
-                            <span className="">@Username </span>
+                            <span className="avatar"><img src=""></img> </span>
+                            <span className="">@GabrielHaines</span>
                         </div>
                         <div className="row earning-price">
                             <div className="col-md-6 col-lg-6 left-part-earning">
@@ -31,22 +36,14 @@ export default function NFTEarning (){
                                     1.5 ETH
                                 </div>
                                 <div className="listed-price-desc-earning">
-                                    Listed Price
+                                    Subscription Price
                                 </div>
                             </div>
-                            <div className="col-md-6 col-lg-6 right-part-earning">
-                                <div className="patronage-earning">
-                                    10%
-                                </div>
-                                <div className="patronage-desc-earning">
-                                    Patronage
-                                </div>
-                            </div>
+
 
                         </div>
                     </div>
                 </div>
-        </div>
     )
 }
 

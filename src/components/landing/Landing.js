@@ -21,7 +21,7 @@ export default function Landing () {
 
                     </div>
                     <div className="col-md-6">
-                            A decentralized protocol unlocking endless streamed income generation for NFT creators
+                                DECENTRALIZED NFT SUBSCRIPTION PROTOCOL
                     </div>
                     <div className="col-md-3">
 
@@ -33,9 +33,8 @@ export default function Landing () {
 
                     </div>
                     <div className="col-md-4">
-                            <div>Total generated since inception
+                            <div>The liberty to enjoy content the way you want. 
                             </div>
-                            <div className="number-animation"> $ 1.546.691</div>
                     </div>
                     <div className="col-md-4">
 
@@ -44,35 +43,29 @@ export default function Landing () {
 
                 <div className="row buttons-landing">
                     <div className="col-lg-1 col-md-1"></div>
-                    <div className="col-lg-5 col-md-5 read-documentation-button">
-                        <div className="button-text">
-                        <Link className="text-link" to="/documentation">
-                            Read Documentation
-                        </Link>
-                        
-                        </div>
-                    </div>
+   
                     <div className="col-lg-5 col-md-5 browse-button">
                         <div className="button-text">
                             <Link className="text-link" to="/marketplace">
-                                Browse
+                                Browse Content
                             </Link>
+                        </div>
+                    </div>
+                    <div className="col-lg-5 col-md-5 read-documentation-button">
+                        <div className="button-text">
+                        <Link className="text-link" to="/mint">
+                            Create a subscription NFT
+                        </Link>
+                        
                         </div>
                     </div>
                     <div className="col-lg-1 col-md-1"></div>
 
                 </div>
 
-                <div className="prices moving-prices">
-                    <span> Total volume 1 day <span className="total-volume">+ $12209</span></span>
-                    <span> Total volume 1 week <span className="total-volume">+ $12209</span></span>
-                    <span> Total volume 1 month <span className="total-volume">+ $12209</span></span>
-                    <span> Total volume 1 day <span className="total-volume">+ $12209</span></span>
 
-                    
-                </div>
                 <div className="row earning-nfts">
-                    <div className="title title-earning-section">These NFTS are earning</div>
+                    <div className="title title-earning-section">Access content</div>
                     <span className="button-to-left">
                         <svg width="71" height="56" viewBox="0 0 71 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="71" height="56" rx="28" transform="matrix(-1 0 0 1 71 0)" fill="#EDEFFF"/>
@@ -87,36 +80,36 @@ export default function Landing () {
                     </span>
 
                     <div className="row nft-list">
-                            <div className="col-md-2 col-lg-2 " style={{marginLeft:'36px'}} >
-                                <NFTEarning/>
+
+                            <div className="col-md-3 col-lg-3"   >
+                                <NFTEarning image="/img/spotify.png"/>
                             </div>
-                            <div className="col-md-2 col-lg-2"style={{marginLeft:'36px'}}  >
-                                <NFTEarning/>
+                            <div className="col-md-3 col-lg-3"   >
+                                <NFTEarning image="/img/bankless.png"/>
                             </div>
-                            <div className="col-md-2 col-lg-2" style={{marginLeft:'36px'}}  >
-                                <NFTEarning/>
+                            <div className="col-md-3 col-lg-3"   >
+                                <NFTEarning image="/img/netflix.png"/>
                             </div>
-                            <div className="col-md-2 col-lg-2"  style={{marginLeft:'36px'}} >
-                                <NFTEarning/>
+                            <div className="col-md-3 col-lg-3" >
+                                <NFTEarning image="/img/gabriel.png"/>
                             </div>
-                            <div className="col-md-2 col-lg-2" style={{marginLeft:'36px'}}  >
-                                <NFTEarning/>
-                            </div>
+
+                            
                     </div>
                         <Link  to="/marketplace" className="text-link"><div className="explore" >EXPLORE ALL → </div></Link>
                 </div>
                 <div className="prices moving-prices">
-                    <span> Revenue 1 day <span className="total-revenue">+ $12209</span></span>
-                    <span> Revenue 1 week <span className="total-revenue">+ $12209</span></span>
-                    <span> Revenue 1 month <span className="total-revenue">+ $12209</span></span>
-                    <span> Revenue  1 day <span className="total-revenue">+ $12209</span></span>
-                    <span> Revenue 1 week <span className="total-revenue">+ $12209</span></span>
+                    <span> Total volume 1 day <span className="total-volume">+ $12209</span></span>
+                    <span> Total volume 1 week <span className="total-volume">+ $12209</span></span>
+                    <span> Total volume 1 month <span className="total-volume">+ $12209</span></span>
+                    <span> Total volume 1 day <span className="total-volume">+ $12209</span></span>
 
+                    
                 </div>
         
                 <div className="row documentation">
                     <div className="title title-documentation">
-                    A revenue model designed for creators
+                            SUBSCRIPTION MADE EASY
 
                     </div>
                     <div className="about">
@@ -124,20 +117,12 @@ export default function Landing () {
                             <div className="col-md-4 col-lg-4">
                             </div>
                             <div className="col-md-4 col-lg-4">
-                            Radical is a decentralized protocol built for developers to unlock a universe of financial applications based on Harberger design.
                             </div>
                             <div className="col-md-4 col-lg-4">
                             </div>
                         </div>
 
                     </div>
-                        <div>
-                            <button className="read-documentation" >
-                                <Link className="text-link" to="/documentation">
-                                READ DOCUMENTATION
-                                </Link>
-                            </button>
-                        </div>
                     <div className="col-md-4 col-lg-4">
                         <div className="shape-svg">
                             <svg width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,10 +142,10 @@ export default function Landing () {
 
                         </div>
                         <div className="subtitle">
-                            Mint a RADICAL
+                            Subscribe
                         </div>
                         <div className="description">
-                        A radical NFT collects a patronage streamed from the owner to the creator
+                            Purchase a Radical NFT to access exclusive content
                         </div>
                     </div>
                     <div className="col-md-4 col-lg-4">
@@ -182,10 +167,10 @@ export default function Landing () {
 
                         </div>
                         <div className="subtitle">
-                            EARN FOREVER
+                            Manage 
                         </div>
                         <div className="description">
-                        Sell your creation for an upfront payment in addition to lifelong income.
+                        All your subscriptions are reunited for easy day to day management.
 
                         </div>
                     </div>
@@ -207,10 +192,11 @@ export default function Landing () {
 
                         </div>
                         <div className="subtitle">
-                            TRADE CREATIONS
+                            Enjoy
                         </div>
                         <div className="description">
-                            Previous collectors receive part of the future patronage.
+                            Pay as you go and instantly cancel when you want.
+
                         </div>
                     </div>
                 </div>

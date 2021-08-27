@@ -1,6 +1,6 @@
 .one-nft{
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     background: #F0F1F9;
     border-color: #F0F1F9;
     border-radius: 20px;
@@ -8,12 +8,11 @@
     float: right;
 }
 .nft-list-marketplace{
-    margin-top: 30px;
-    margin-left: 90px;
+    margin-top: 4%;
 
 }
 .single-nft-section{
-    margin-top: 50px;
+    margin-top: 5%;
     margin-bottom:100px;
 }
 .upper{

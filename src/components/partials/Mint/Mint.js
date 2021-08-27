@@ -87,7 +87,7 @@ function  Mint() {
             onChange={formProps.input.onChange}
             value={formProps.input.value}
             className="nft-copies"
-            placeholder="NUMBER OF COPIES"/>
+            placeholder="Link to Content"/>
         </div>
     }
     function nftDescInput(formProps){
@@ -96,7 +96,7 @@ function  Mint() {
             onChange={formProps.input.onChange}
             value={formProps.input.value}
             className="nft-desc"
-            placeholder="DESCRIPITON"/>
+            placeholder="DESCRIPITON - What will the subscriber get"/>
         </div>
     }
     function nftNameInput(formProps){
@@ -105,7 +105,7 @@ function  Mint() {
             onChange={formProps.input.onChange}
             value={formProps.input.value}
             className="nft-name"
-            placeholder="NFT NAME" />
+            placeholder="CONTENT TITLE" />
         </div>
     }
     function nftPriceInput(formProps){
@@ -114,7 +114,7 @@ function  Mint() {
             onChange={formProps.input.onChange}
             value={formProps.input.value}
             className="nft-mint-price"
-            placeholder="PRICE" />
+            placeholder="SUBSCRIPTION MONTHLY PRICE, ETH" />
         </div>
     }
     function nftPatronageInput(formProps){
@@ -123,7 +123,7 @@ function  Mint() {
             onChange={formProps.input.onChange}
             value={formProps.input.value}
             className="nft-mint-patronage"
-            placeholder="PATRONAGE" />
+            placeholder="MINIMUM SUBSCRIPTIOn, NUMBER OF DAYS " />
         </div>
     }
 
@@ -134,13 +134,12 @@ function  Mint() {
                 style={connectModal} >
 
                     <div className="title-mint">
-                        Mint your nft
+                        Create  subscription offer
                     </div>
                     <div className="modal-nav">
-                        <span onClick={addUpload} className={uploadActive} >Upload your nFT →</span>
+                    <span onClick={addUpload} className={uploadActive} >Subscription image → </span>
                         <span onClick={addInfo} className={infoActive} >Add info →</span>
-                        <span onClick={addCollection} className={collectionActive} >Add to collection → </span>
-                        <span onClick={addPrice} className={priceActive} > Add Price and Patronage →</span>
+                        <span onClick={addPrice} className={collectionActive} >Subscription price → </span>
                     </div>
                     
                     <div className="nft-droparea">
@@ -149,13 +148,10 @@ function  Mint() {
 
 
                         <div className="nft-droparea-desc">
-                        Drag and Drop your NFT content
+                            Drag and Drop your NFT content image
                         </div>
 
                         <div className="allowed-formats">
-                            <span className="format">
-                                MP3
-                            </span>
                             <span className="format">
                                 JPEG
                             </span>
@@ -164,9 +160,6 @@ function  Mint() {
                             </span>
                             <span className="format">
                                 GIF
-                            </span>
-                            <span className="format">
-                                MP4
                             </span>
                         </div>
                         </form>
@@ -183,81 +176,34 @@ function  Mint() {
             style={connectModal}>
 
                     <div className="title-mint">
-                        Mint your nft
+                        Create Subscription Offer
                     </div>
                     <div className="modal-nav">
-                        <span onClick={addUpload} className={uploadActive} >Upload your nFT →</span>
+                        <span onClick={addUpload} className={uploadActive} >Subscription image → </span>
                         <span onClick={addInfo} className={infoActive} >Add info →</span>
-                        <span onClick={addCollection} className={collectionActive} >Add to collection → </span>
-                        <span onClick={addPrice} className={priceActive} > Add Price and Patronage →</span>
+                        <span onClick={addPrice} className={collectionActive} >Subscription price → </span>
                     </div>
                     <div className="nft-info">
                         <Field name="nft-name" component={nftNameInput}></Field>
                         <Field name="nft-desc" component={nftDescInput}></Field>
                         <Field name="nft-copies" component={nftCopiesInput}></Field>
                     </div>
-                    <div className="button-next" onClick={addCollection}>
-                            Next
-                    </div>
-
-
-            </Modal>
-
-            <Modal 
-            isOpen={modalCollectionIsOpen}
-            style={connectModal}>
-
-                    <div className="title-mint">
-                        Mint your nft
-                    </div>
-                    <div className="modal-nav">
-                        <span onClick={addUpload} className={uploadActive} >Upload your nFT →</span>
-                        <span onClick={addInfo} className={infoActive} >Add info →</span>
-                        <span onClick={addCollection} className={collectionActive} >Add to collection → </span>
-                        <span onClick={addPrice} className={priceActive} > Add Price and Patronage →</span>
-                    </div>
-                    <div className="collections">
-                        <span>
-                            <svg width="186" height="186" viewBox="0 0 186 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="186" height="186" rx="50" fill="#F0F1F9"/>
-                            </svg>
-                        </span>
-                        <span>
-                            <svg width="186" height="186" viewBox="0 0 186 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="186" height="186" rx="50" fill="#F0F1F9"/>
-                            </svg>
-
-                        </span>
-                        <span>
-                            <svg width="186" height="186" viewBox="0 0 186 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="186" height="186" rx="50" fill="#F0F1F9"/>
-                            </svg>
-
-                        </span>
-                        <span>
-                            <svg width="186" height="186" viewBox="0 0 186 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="186" height="186" rx="50" fill="#F0F1F9"/>
-                            <path d="M86.1086 129.15C86.1086 131.359 87.8995 133.15 90.1086 133.15H95.7416C97.9507 133.15 99.7416 131.359 99.7416 129.15V103.891C99.7416 101.682 101.532 99.8914 103.742 99.8914H129C131.209 99.8914 133 98.1005 133 95.8914V90.2584C133 88.0493 131.209 86.2584 129 86.2584H103.742C101.532 86.2584 99.7416 84.4676 99.7416 82.2584V57C99.7416 54.7909 97.9507 53 95.7416 53H90.1086C87.8995 53 86.1086 54.7909 86.1086 57V82.2584C86.1086 84.4676 84.3178 86.2584 82.1086 86.2584H57C54.7909 86.2584 53 88.0493 53 90.2584V95.8914C53 98.1005 54.7909 99.8914 57 99.8914H82.1086C84.3178 99.8914 86.1086 101.682 86.1086 103.891V129.15Z" fill="white"/>
-                            </svg>  
-                        </span>
-                    </div>
                     <div className="button-next" onClick={addPrice}>
                             Next
                     </div>
 
 
-        </Modal>
-        <Modal 
+            </Modal>
+            <Modal 
             isOpen={modalPriceIsOpen}
             style={connectModal}>
                     <div className="title-mint">
-                        Mint your nft
+                        Create Subscription Offer
                     </div>
                     <div className="modal-nav">
-                        <span onClick={addUpload} className={uploadActive} >Upload your nFT →</span>
+                    <span onClick={addUpload} className={uploadActive} >Subscription image → </span>
                         <span onClick={addInfo} className={infoActive} >Add info →</span>
-                        <span onClick={addCollection} className={collectionActive} >Add to collection → </span>
-                        <span onClick={addPrice} className={priceActive} > Add Price and Patronage →</span>
+                        <span onClick={addPrice} className={collectionActive} >Subscription price → </span>
                     </div>
                     <div className="nft-pricing">
                         <Field name="nft-price" component={nftPriceInput}></Field>
@@ -265,11 +211,12 @@ function  Mint() {
                     </div>
                     <Link to="/profile" className="text-link">  
                     <div className="button-next" onClick={addCollection}>
-                            Mint
+                            Create 
                     </div>
                     </Link>
 
         </Modal>
+
     </div>
     )
 }

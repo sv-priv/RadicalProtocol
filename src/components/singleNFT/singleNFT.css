@@ -19,10 +19,10 @@
     background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
 }
 .picture-section .image {
-    width: 400px;
-    height: 400px;
+    width: 440px;
+    height: 440px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 5%;
     background-color: white;
     border-radius: 20px;
 

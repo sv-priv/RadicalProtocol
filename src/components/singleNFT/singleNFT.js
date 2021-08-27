@@ -7,15 +7,19 @@ import NFTEarning from '../partials/NFTEarning/NFTEarning';
 
 export default function singleNFT () {
 
+    const mainNFTImg  = {
+        width: "440px",
+        height: "440px"
+    }
 
     return(
         <div>
             <Nav/>
                 <div className="row picture-section"> 
-                    <div className="image" ></div>
+                    <div className="image">
+                        <img src="/img/spotify.png" style={mainNFTImg}></img>
+                    </div>
                 </div>
-
-
                 <div className="row single-nft-section">
                     <div className="col-md-5 col-lg-5 single-nft-description-section">
                         <svg width="27" height="11" viewBox="0 0 27 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,16 +27,14 @@ export default function singleNFT () {
                         </svg>
 
                         <div className="single-nft-title">
-                            Syntaxis mustery
+                            Spotify Family
                         </div>
                         <div className="single-nft-description">
-                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
-                            Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, 
-                            accompanied by English versions from the 1914 translation by H. Rackham.
+                            The best of music available 24/7.
                         </div>
                         <div className="author">
                             <span className="user-avatar"><img src=""></img> </span>
-                            <span className="username">@Username </span>
+                            <span className="username">@Spotify </span>
                         </div>
 
                     </div>
@@ -61,28 +63,22 @@ export default function singleNFT () {
                         </div>
                     </div>
                 </div>
-                <div className="row" >
-                    <div className="single-nft-nav">
-                        <span>Details</span>
-                        <span>Past transactions</span>
-                        <span>Patronage evolution in time</span>
-                        <span>Total pantronage generated</span>
-                        <hr></hr>
-                    </div>
-                </div>
                 <div>
+                    Related Content
+                </div>
+                <div className="row">
                     <div className="row nft-list ">
                         <div className="col-md-3 col-lg-3" >
-                            <NFTEarning/>
+                            <NFTEarning image="/img/bankless.png"></NFTEarning>
                         </div>
                         <div className="col-md-3 col-lg-3" >
-                            <NFTEarning/>
+                            <NFTEarning image="/img/gabriel.png"></NFTEarning>
                         </div>
                         <div className="col-md-3 col-lg-3" >
-                            <NFTEarning/>
+                            <NFTEarning image="/img/netflix.png"></NFTEarning>
                         </div>
                         <div className="col-md-3 col-lg-3" >
-                            <NFTEarning/>
+                            <NFTEarning image="/img/gabriel.png"></NFTEarning>
                         </div>
                     </div>
                 </div>

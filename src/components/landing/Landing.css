@@ -8,7 +8,9 @@
 
 .read-documentation-button{
     height:180px;
+    margin-left: 20px;
     color: white;
+    width: 630px;
     border-radius: 42px;
     background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
 
@@ -16,21 +18,27 @@
 .read-documentation-button:hover{
     height:180px;
     color: white;
+    margin-left: 20px;
+    width: 630px;
     border-radius: 42px;
     background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
 }
 .browse-button{
     margin-left: 20px;
     height: 180px;
+    width: 630px;
     border-radius: 42px;
     background: #EDEFFF;
+    
 }
+
 .browse-button:hover{
     margin-left: 20px;
+    width: 630px;
     height: 180px;
     border-radius: 42px;
     background: #BAC2FF;
-    ;
+    
 }
 .button-to-left{
     position: absolute;
@@ -77,7 +85,7 @@
 }
 .landing-animation{
     background-color: white;
-    margin-top: 30px;
+    margin-top: 6%;
     font-size: 40px;
     font-family: Whyte-Inktrap;
     text-transform: uppercase;
@@ -176,8 +184,7 @@
 
 }
 .title-documentation{
-    padding-bottom: 50px;
-    width: 500px;
+    padding-bottom: 140px;
 
 }
 .sponsors{

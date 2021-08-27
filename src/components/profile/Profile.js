@@ -21,12 +21,12 @@ export default function Profile (){
                             </div>
                         </Link>
                     <div className="profile-nav">
-                        <div>Overview</div>
-                        <div>Active Listings</div>
-                        <div>Radical NFTs</div>
-                        <div>Patronage NFTs</div>
-                        <div>Collected NFTs</div>
-                        <div>Account Settings</div>
+                        <div>Your Subscriptions</div>
+                        <div>Active Subscription</div>
+                        <div>Subscription History</div>
+                        <div>USERS OVERVIEw</div>
+                        <div>YOUR SUBSCRIBERS</div>
+                        <div>← BACK TO CONTENT</div>
                     </div>                
                 </div>
                 <div className="col-md-9 col-lg-9 overview right-profile" >
@@ -34,19 +34,11 @@ export default function Profile (){
                             
                             <div className="col-md-9 col-lg-9 back-to-markeplace">
                                 <Link className="text-link" to="/marketplace">
-                                    ← Back to marketplace
+                                    ← Back to SEE CONTENT
                                 </Link>
                             </div>
                             <span className="col-md-3 col-lg-3 right-profile-menu">
-                                <Link className="text-link">
-                                    <span className=" nav-item">
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="5.5" cy="5" r="4.5" stroke="#282828" stroke-linejoin="round"/>
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2715 12.5L8 8.27523L8.72845 7.5L13 11.7248L12.2715 12.5Z" fill="#282828"/>
-                                        </svg>
-                                            Search
-                                    </span>
-                                </Link>
+
 
                                 <Link className="text-link" to="/mint">
                                     <span className=" nav-item"> Mint</span>
@@ -60,12 +52,12 @@ export default function Profile (){
                     </div>
                     <div className="overview">
                         <div className="profile-section-title">Overview</div>
-                        <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
+                        <div className="profile-section-desc">Manage your subscriptions.</div>
                         <div className="row collect-row">
                             <div className="col-md-9 col-lg-9">
                                 <div className="current-patronage">
-                                    <div className="price-desc">Current patronage</div>
-                                    <div className="price-dollars">$ 2.200</div>
+                                    <div className="price-desc">Monthly payment</div>
+                                    <div className="price-dollars">$ 3.200</div>
                                     <div className="price-eth">1 ETH</div>
 
                                 </div>
@@ -101,11 +93,11 @@ export default function Profile (){
                     </div>
                     <div className="active-listings">
 
-                        <div className="profile-section-title">Active Listings</div>
-                        <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
+                        <div className="profile-section-title">Active Subscriptions</div>
+                        <div className="profile-section-desc">What are u enjoying at the moment</div>
                         <div className="row active-listing-nft">
                             <div className="col-md-4 col-lg-4">
-                                <NFTEarning></NFTEarning>
+                                <NFTEarning image="/img/gabriel.png"></NFTEarning>
                             </div>
                             <div className="col-md-8 col-lg-8">
                                 <div className="listed-nft-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -115,10 +107,10 @@ export default function Profile (){
                                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                                 <div className="row">
                                     <button className="col-md-6 col-lg-6 edit-listing-button">
-                                            Edit nft listing
+                                            DEPOSIT
                                     </button>
                                     <button className="col-md-6 col-lg-6 remove-listing-button">
-                                            remove
+                                            CANCEL AND WITHDRAW DEPOSIT
 
                                     </button>
                                 </div>
@@ -126,16 +118,16 @@ export default function Profile (){
                         </div>
                         <div className="row active-listing-nft">
                             <div className="col-md-4 col-lg-4">
-                                <NFTEarning></NFTEarning>
+                                <NFTEarning image="/img/gabriel.png"></NFTEarning>
                             </div>
                             <div className="col-md-8 col-lg-8">
                                 <div className="listed-nft-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                                 <div className="row">
                                     <button className="col-md-6 col-lg-6 edit-listing-button">
-                                            Edit nft listing
+                                        DEPOSIT
                                     </button>
                                     <button className="col-md-6 col-lg-6 remove-listing-button">
-                                            remove
+                                        CANCEL AND WITHDRAW DEPOSIT
 
                                     </button>
                                 </div>
@@ -145,8 +137,8 @@ export default function Profile (){
                     </div>
 
                     <div className="radical-nfts">
-                        <div className="profile-section-title">Radical NFTs</div>
-                        <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
+                        <div className="profile-section-title">Subscription History</div>
+                        <div className="profile-section-desc">Consume the way you want.</div>
                         <div className="row">
 
                         </div>

@@ -183,20 +183,9 @@ function Nav (){
                     </div>
                     
                     <div className="col-md-4 col-lg-4 mid-content">
-                    <Link className="text-link" to="/marketplace"><span className="nav-item">Marketplace</span></Link>
-                    <a href="https://radical.gitbook.io/radical-nft/" className="text-link nav-item" >Documentation</a>
-                    <a href="https://showcase.ethglobal.co/hackmoney2021/radical" className="text-link nav-item" >About</a>
+                    <Link className="text-link" to="/marketplace"><span className="nav-item">Content</span></Link>
                     </div>
                     <div className="col-md-4 col-lg-4 right-content">
-                    <Link className="text-link" to="/search">
-                    <span className="search nav-item">
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="5.5" cy="5" r="4.5" stroke="#282828" stroke-linejoin="round"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2715 12.5L8 8.27523L8.72845 7.5L13 11.7248L12.2715 12.5Z" fill="#282828"/>
-                    </svg>
-                        Search
-                    </span>
-                    </Link>
                     <Link to="/mint"  className="text-link">
                     <span className="mint nav-item"> Mint</span>
                     </Link>
