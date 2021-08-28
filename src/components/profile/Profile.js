@@ -21,12 +21,12 @@ export default function Profile (){
                             </div>
                         </Link>
                     <div className="profile-nav">
-                        <div>Your Subscriptions</div>
-                        <div>Active Subscription</div>
-                        <div>Subscription History</div>
-                        <div>USERS OVERVIEw</div>
-                        <div>YOUR SUBSCRIBERS</div>
-                        <div>← BACK TO CONTENT</div>
+                        <div><a>Your Subscriptions</a></div>
+                        <div><a>Active Subscription</a></div>
+                        <div><a>Subscription History</a></div>
+                        <div><a>USERS OVERVIEw</a></div>
+                        <div><a>YOUR SUBSCRIBERS</a></div>
+                        <div><a>← BACK TO CONTENT</a></div>
                     </div>                
                 </div>
                 <div className="col-md-9 col-lg-9 overview right-profile" >
@@ -54,7 +54,7 @@ export default function Profile (){
                         <div className="profile-section-title">Overview</div>
                         <div className="profile-section-desc">Manage your subscriptions.</div>
                         <div className="row collect-row">
-                            <div className="col-md-9 col-lg-9">
+                            <div className="col-md-12 col-lg-12 col-sm-12">
                                 <div className="current-patronage">
                                     <div className="price-desc">Monthly payment</div>
                                     <div className="price-dollars">$ 3.200</div>
@@ -62,14 +62,14 @@ export default function Profile (){
 
                                 </div>
                             </div>
-                            <div className="col-md-3 col-lg-3">
+                            {/* <div className="col-md-3 col-lg-3">
                                 <button className="collect-patronage">
                                     Collect
                                 </button>
 
-                            </div>
+                            </div> */}
                         </div>
-                        <div className="row patronages-row" >
+                        {/* <div className="row patronages-row" >
                             <div className="col-md-4 col-lg-4 box">
                                 <div className="total-patronage">
                                     <div className="price-desc">  Total Patronage ↑</div>
@@ -89,7 +89,7 @@ export default function Profile (){
                                         
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="active-listings">
 
@@ -100,11 +100,9 @@ export default function Profile (){
                                 <NFTEarning image="/img/gabriel.png"></NFTEarning>
                             </div>
                             <div className="col-md-8 col-lg-8">
-                                <div className="listed-nft-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div className="listed-nft-desc">
+
+                                </div>
                                 <div className="row">
                                     <button className="col-md-6 col-lg-6 edit-listing-button">
                                             DEPOSIT
@@ -121,7 +119,10 @@ export default function Profile (){
                                 <NFTEarning image="/img/gabriel.png"></NFTEarning>
                             </div>
                             <div className="col-md-8 col-lg-8">
-                                <div className="listed-nft-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div className="listed-nft-desc">
+
+
+                                      </div>
                                 <div className="row">
                                     <button className="col-md-6 col-lg-6 edit-listing-button">
                                         DEPOSIT

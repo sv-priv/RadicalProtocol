@@ -136,6 +136,7 @@ function  Mint() {
                     <div className="title-mint">
                         Create  subscription offer
                     </div>
+
                     <div className="modal-nav">
                     <span onClick={addUpload} className={uploadActive} >Subscription image → </span>
                         <span onClick={addInfo} className={infoActive} >Add info →</span>
@@ -178,6 +179,7 @@ function  Mint() {
                     <div className="title-mint">
                         Create Subscription Offer
                     </div>
+
                     <div className="modal-nav">
                         <span onClick={addUpload} className={uploadActive} >Subscription image → </span>
                         <span onClick={addInfo} className={infoActive} >Add info →</span>

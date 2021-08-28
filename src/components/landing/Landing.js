@@ -44,14 +44,14 @@ export default function Landing () {
                 <div className="row buttons-landing">
                     <div className="col-lg-1 col-md-1"></div>
    
-                    <div className="col-lg-5 col-md-5 browse-button">
+                    <div className="col-lg-5 col-md-6 col-sm-12 browse-button">
                         <div className="button-text">
                             <Link className="text-link" to="/marketplace">
                                 Browse Content
                             </Link>
                         </div>
                     </div>
-                    <div className="col-lg-5 col-md-5 read-documentation-button">
+                    <div className="col-lg-5 col-md-5  col-sm-12 read-documentation-button">
                         <div className="button-text">
                         <Link className="text-link" to="/mint">
                             Create a subscription NFT
@@ -81,16 +81,16 @@ export default function Landing () {
 
                     <div className="row nft-list">
 
-                            <div className="col-md-3 col-lg-3"   >
+                            <div className="col-md-3 col-lg-3 single-nft-prev"   >
                                 <NFTEarning image="/img/spotify.png"/>
                             </div>
-                            <div className="col-md-3 col-lg-3"   >
+                            <div className="col-md-3 col-lg-3 single-nft-prev"   >
                                 <NFTEarning image="/img/bankless.png"/>
                             </div>
-                            <div className="col-md-3 col-lg-3"   >
+                            <div className="col-md-3 col-lg-3 single-nft-prev"   >
                                 <NFTEarning image="/img/netflix.png"/>
                             </div>
-                            <div className="col-md-3 col-lg-3" >
+                            <div className="col-md-3 col-lg-3 single-nft-prev" >
                                 <NFTEarning image="/img/gabriel.png"/>
                             </div>
 
@@ -189,8 +189,7 @@ export default function Landing () {
                             </filter>
                             </defs>
                         </svg>
-
-                        </div>
+                    </div>
                         <div className="subtitle">
                             Enjoy
                         </div>
@@ -203,7 +202,7 @@ export default function Landing () {
             
                 <div className="row sponsors">
                     <div className="title title-sponsors"> BUILT WITH THEM</div>
-                        <div className="col-md-3 col-lg-3">
+                    <div className="col-md-3 col-lg-3 sponsor">
                             <svg width="84" height="137" viewBox="0 0 84 137" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g opacity="0.5" clip-path="url(#clip0)">
                             <path d="M41.9871 0L41.0699 3.1211V93.6883L41.9871 94.6049L83.9746 69.755L41.9871 0Z" fill="#343434"/>
@@ -220,21 +219,19 @@ export default function Landing () {
                             </defs>
                             </svg>
                         </div>
-                    <div className="col-md-3 col-lg-3">
-                    <svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M111.312 0H25.6875C11.5007 0 0 11.5007 0 25.6875V111.312C0 125.499 11.5007 137 25.6875 137H111.312C125.499 137 137 125.499 137 111.312V25.6875C137 11.5007 125.499 0 111.312 0Z" fill="#FEDA03"/>
-                        <path d="M94.5309 67.998C98.846 66.8765 102.686 63.6487 102.686 57.159C102.686 46.3537 93.5115 43.8394 81.755 43.8394H34.9331V92.4962H54.6403V75.9828H78.0175C81.6191 75.9828 83.7257 77.4099 83.7257 80.9437V92.4962H103.433V80.3321C103.433 73.7062 99.6956 69.5269 94.5309 67.998ZM78.3572 62.8672H54.6403V58.1103H78.3572C80.9394 58.1103 82.5025 58.45 82.5025 60.4887C82.5025 62.5274 80.9394 62.8672 78.3572 62.8672Z" fill="black"/>
+                    <div className="col-md-3 col-lg-3 sponsor">
+                        <svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M111.312 0H25.6875C11.5007 0 0 11.5007 0 25.6875V111.312C0 125.499 11.5007 137 25.6875 137H111.312C125.499 137 137 125.499 137 111.312V25.6875C137 11.5007 125.499 0 111.312 0Z" fill="#FEDA03"/>
+                            <path d="M94.5309 67.998C98.846 66.8765 102.686 63.6487 102.686 57.159C102.686 46.3537 93.5115 43.8394 81.755 43.8394H34.9331V92.4962H54.6403V75.9828H78.0175C81.6191 75.9828 83.7257 77.4099 83.7257 80.9437V92.4962H103.433V80.3321C103.433 73.7062 99.6956 69.5269 94.5309 67.998ZM78.3572 62.8672H54.6403V58.1103H78.3572C80.9394 58.1103 82.5025 58.45 82.5025 60.4887C82.5025 62.5274 80.9394 62.8672 78.3572 62.8672Z" fill="black"/>
                         </svg>
-
-                                        </div>
-                                        <div className="col-md-3 col-lg-3">
-                                        <svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6875 0C11.5007 0 0 11.5007 0 25.6875V111.312C0 125.499 11.5007 137 25.6875 137H111.312C125.499 137 137 125.499 137 111.312V25.6875C137 11.5007 125.499 0 111.312 0H25.6875ZM102.686 57.159C102.686 63.6487 98.8459 66.8765 94.5309 67.998C99.6955 69.5269 103.433 73.7062 103.433 80.3321V92.4962H83.7256V80.9437C83.7256 77.4099 81.619 75.9828 78.0174 75.9828H54.6403V92.4962H34.9331V43.8394H81.755C93.5115 43.8394 102.686 46.3537 102.686 57.159ZM54.6403 62.8672H78.3572C80.9394 62.8672 82.5025 62.5274 82.5025 60.4887C82.5025 58.45 80.9394 58.1103 78.3572 58.1103H54.6403V62.8672Z" fill="black"/>
-                    </svg>
-
                     </div>
-                    <div className="col-md-3 col-lg-3">
-                    <svg width="131" height="131" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="col-md-3 col-lg-3 sponsor">
+                        <svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.6875 0C11.5007 0 0 11.5007 0 25.6875V111.312C0 125.499 11.5007 137 25.6875 137H111.312C125.499 137 137 125.499 137 111.312V25.6875C137 11.5007 125.499 0 111.312 0H25.6875ZM102.686 57.159C102.686 63.6487 98.8459 66.8765 94.5309 67.998C99.6955 69.5269 103.433 73.7062 103.433 80.3321V92.4962H83.7256V80.9437C83.7256 77.4099 81.619 75.9828 78.0174 75.9828H54.6403V92.4962H34.9331V43.8394H81.755C93.5115 43.8394 102.686 46.3537 102.686 57.159ZM54.6403 62.8672H78.3572C80.9394 62.8672 82.5025 62.5274 82.5025 60.4887C82.5025 58.45 80.9394 58.1103 78.3572 58.1103H54.6403V62.8672Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div className="col-md-3 col-lg-3 sponsor">
+                        <svg width="131" height="131" viewBox="0 0 131 131" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M43.3823 64.8056L65.4117 30.1938L87.4413 64.8056L65.4117 77.3915L43.3823 64.8056Z" fill="white"/>
                             <path d="M43.3823 70.7168L65.4117 83.303L87.4413 70.7168L65.4117 100.609L43.3823 70.7168Z" fill="white"/>
                             <path d="M75.4299 16.1529C72.0087 17.7492 68.6774 19.5316 65.451 21.4922C62.2048 19.5096 58.8452 17.7186 55.3896 16.1282C58.6153 13.9485 61.9485 11.9323 65.3768 10.0874C68.7445 11.8946 72.0954 13.9164 75.4299 16.1529Z" fill="#5F9A34"/>
@@ -249,8 +246,7 @@ export default function Landing () {
                             <path d="M21.4999 65.3607C19.5176 68.611 17.7236 71.9723 16.1268 75.4285C13.89 72.1027 11.8761 68.7606 10.085 65.4433C11.8925 62.0762 13.923 58.7092 16.1598 55.3838C17.75 58.8076 19.5329 62.1384 21.4999 65.3607Z" fill="#204FA0"/>
                             <path d="M15.3351 15.3275C21.4509 9.21237 32.2964 8.18083 45.8658 12.4392C49.1152 13.4669 52.2965 14.6989 55.3905 16.1279C58.6162 13.9482 61.9494 11.9321 65.3776 10.0872C60.0925 7.21023 54.5457 4.84213 48.8124 3.0149C31.5701 -2.38194 17.2004 -0.492327 8.35238 8.35414C2.69855 14.0071 0.0078125 21.8385 0.0078125 30.916C0.0078125 41.2561 3.49916 53.222 10.0857 65.4437C11.8932 62.0766 13.9237 58.7098 16.1606 55.3842C8.36891 38.5576 7.4197 23.2414 15.3351 15.3275Z" fill="#5FC5A6"/>
                             <path d="M55.3897 16.1274C39.9529 26.6208 26.6419 39.9406 16.1597 55.3836C17.7498 58.8076 19.5328 62.1385 21.4999 65.3606C32.5335 47.5149 47.5837 32.4929 65.4511 21.4914C62.2049 19.5089 58.8453 17.7179 55.3897 16.1274Z" fill="#5FC5A6"/>
-                            </svg>
-
+                        </svg>
                     </div>
                 </div>
             </div>

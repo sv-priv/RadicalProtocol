@@ -7,36 +7,40 @@
 }
 
 .read-documentation-button{
-    height:180px;
-    margin-left: 20px;
-    color: white;
+    height: 180px;
     width: 630px;
     border-radius: 42px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 2%;
     background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
 
 }
 .read-documentation-button:hover{
-    height:180px;
-    color: white;
-    margin-left: 20px;
+    height: 180px;
     width: 630px;
     border-radius: 42px;
+    margin: 0 auto;
+    margin-top: 2%;
+    color: white;
     background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
 }
 .browse-button{
-    margin-left: 20px;
+
     height: 180px;
     width: 630px;
     border-radius: 42px;
+    margin: 0 auto;
+    margin-top: 2%;
     background: #EDEFFF;
     
 }
-
 .browse-button:hover{
-    margin-left: 20px;
-    width: 630px;
     height: 180px;
+    width: 630px;
     border-radius: 42px;
+    margin: 0 auto;
+    margin-top: 2%;
     background: #BAC2FF;
     
 }
@@ -56,22 +60,29 @@
     font-weight: normal;
     font-size: 40px;
     line-height: 110%;
-    margin: 0 auto;
     text-align: center;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    
     color: #313439;
 }
-.title{
-    font-family: Whyte-Inktrap;
+.subtitle{
+    font-family: Whyte Inktrap;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 25px;
     line-height: 110%;
     text-align: center;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    color: #313439;
+}
+.description{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
     color: #313439;
 }
 .about{
@@ -241,5 +252,16 @@
 }
 .social-item:hover{
     background: rgba(186, 194, 255, 1)    ;
+}
+.sponsor{
+    margin-bottom: 30px;
+}
+.single-nft-prev{
+    margin-bottom: 30px;
 
 }
+@media only screen and (max-width: 600px) {
+    .moving-prices {
+        display: none;
+    }
+  }

@@ -73,6 +73,9 @@
     margin-top: 90px;
     border-top:1px solid rgba(215, 218, 241, 1)    ;
 }
+input.middle:focus {
+    outline-width: 0;
+}
 .single-nft-nav{
 
     padding-left: 30px;
@@ -95,4 +98,43 @@
 }
 .nft-list{
     margin-bottom: 50px;
+}
+.react-responsive-modal-modal {
+    max-width: 1000px;
+    width: 90%;
+    display: inline-block;
+    height: 600px;
+    border-radius: 60px;
+    text-align: left;
+    vertical-align: middle;
+    background: #ffffff;
+    box-shadow: 0 12px 15px 0 rgb(0 0 0 / 25%);
+    /* margin: 1.2rem; */
+    margin: 0 auto;
+    padding: 1.2rem;
+    position: relative;
+    overflow-y: auto;
+}
+.react-responsive-modal-closeButton {
+    top: 25px!important;
+    right: 35px!important;
+}
+.related-content-title{
+    margin: 0 auto;
+    
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: flex-end;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.related-content-section{
+    background: #EDEFFF;
+    padding: 8%;
+    border-radius: 50px;
 }

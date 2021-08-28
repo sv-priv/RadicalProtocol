@@ -1,19 +1,75 @@
 import React from 'react';
 import './singleNFT.css';
+import { useState } from 'react';
 import Nav from '../shared/nav/nav';
 import Footer from '../shared/footer/footer';
 import NFTEarning from '../partials/NFTEarning/NFTEarning';
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
+import { Field } from 'redux-form';
 
 
-export default function singleNFT () {
+export default function SingleNFT () {
 
     const mainNFTImg  = {
         width: "440px",
         height: "440px"
     }
+    const modalStyle= {
+        padding: "50px"
+
+    }
+    const depositEth = {
+        width: "100%",
+        height: "140px",
+        background: "#F0F1F9",
+        borderRadius: "20px",
+        marginBottom: "30%",
+        border: "none"
+    }
+    const depositEthInput = {
+        background: "#F0F1F9",
+        borderRadius: "20px",
+        marginBottom: "10%",
+        border: "none"
+    }
+    const subscriptionLast = {
+        width: "100%",
+        height: "60px",
+        background: "#F0F1F9",
+        borderRadius: "20px",
+        marginBottom: "10%",
+        border: "none"
+    }
+    const [open, setOpen] = useState(false);
+
+    const onOpenModal = () => setOpen(true);
+    const onCloseModal = () => setOpen(false);
 
     return(
         <div>
+                <Modal open={open} onClose={onCloseModal} center style={modalStyle}>
+                    <div className="row" style={modalStyle} >
+                        <div className="col-md-6 col-lg-6">
+                            <NFTEarning image="/img/gabriel.png"></NFTEarning>
+                        </div>
+                        <div className="col-ld-6 col-md-6">
+                            <div style={depositEth}>
+                            <input type="text" placeholder="TEST" style={depositEthInput}></input>
+                            <div>test</div>
+                            </div>
+
+                            <input type="text" placeholder="TEST" style={subscriptionLast}></input>
+
+                            <button class="settings-button">Save new password</button>
+                        </div>
+                    </div>
+
+   
+
+
+
+                </Modal>
             <Nav/>
                 <div className="row picture-section"> 
                     <div className="image">
@@ -33,7 +89,7 @@ export default function singleNFT () {
                             The best of music available 24/7.
                         </div>
                         <div className="author">
-                            <span className="user-avatar"><img src=""></img> </span>
+                            <span className="user-avatar"><img src="/img/spotify.png"></img> </span>
                             <span className="username">@Spotify </span>
                         </div>
 
@@ -45,7 +101,7 @@ export default function singleNFT () {
                                     1.5 ETH
                                 </div>
                                 <div className="listed-price-desc">
-                                    Listed Price
+                                    Monthly Subscription
                                 </div>
                             </div>
                             <div className="col-md-6 col-lg-6 right-part">
@@ -53,20 +109,21 @@ export default function singleNFT () {
                                     10%
                                 </div>
                                 <div className="patronage-desc">
-                                    Patronage
+                                    Minimum subscription in days
                                 </div>
                             </div>
 
                         </div>
                         <div className="row">
-                            <button className="buy-button">Buy</button>
+                            <button className="buy-button" onClick={onOpenModal}>SUBSCRIBE</button>
                         </div>
                     </div>
                 </div>
-                <div>
-                    Related Content
-                </div>
-                <div className="row">
+
+                <div className="row related-content-section">
+                    <div className="row" className="related-content-title">
+                        Related Content
+                    </div>
                     <div className="row nft-list ">
                         <div className="col-md-3 col-lg-3" >
                             <NFTEarning image="/img/bankless.png"></NFTEarning>
@@ -82,7 +139,7 @@ export default function singleNFT () {
                         </div>
                     </div>
                 </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }
