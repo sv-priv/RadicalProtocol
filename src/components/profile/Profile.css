@@ -50,14 +50,15 @@
     background: #F7F7FC;
     border-radius: 30px;
 }
-.edit-listing-button{
+.deposit-subscription-button{
     height: 87px;
-    background: #F0F1F9;
-    border-radius: 20px;
+    background: #4946E6;
     border: none;
+    border-radius: 1000px;
+    margin: 0 auto;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #313439;
+    color: white;
 }
 .price-desc{
     font-family: Grtsk Zetta;
@@ -100,6 +101,18 @@
 .active-listing-nft{
     margin-bottom: 40px;
     
+}
+.active-subscription-desc{
+    font-family: Whyte;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 120%;
+/* or 24px */
+
+letter-spacing: 0.01em;
+
+color: #808195;
 }
 .patronage-table-nav{
     font-family: Grtsk Zetta;
@@ -189,9 +202,9 @@
     
     color: #313439;
 }
-.remove-listing-button{
-    width: 316px;
+.cancel-subscription-button{
     height: 87px;
+    margin: 0 auto;
     text-transform: uppercase;
     color: rgba(49, 52, 57, 0.6);
     background: rgba(240, 241, 249, 0.5);
@@ -209,6 +222,8 @@
 }
 .listed-nft-desc{
     margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
     height: 370px;
 }
 .profile-section-desc{
@@ -300,6 +315,27 @@
     text-transform: uppercase;
     color: #FFFFFF;
 
+}
+.profile-nav a{
+    text-decoration: none;
+    color: #808195;
+}
+.manage-funds-buttons{
+    padding-right: 7%;
+    padding-left: 7%;
+
+}
+.my-subscription-text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #313439;
 }
 .settings-field{
     background: #F7F7FC;

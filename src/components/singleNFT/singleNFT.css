@@ -82,6 +82,35 @@ input.middle:focus {
     padding-right: 30px;
 
 }
+.settings-button{
+    align-items: center;
+    height: 120px;
+    border: none;    
+    width: 100%;
+    background: #9795DC;
+    border-radius: 1000px;
+    font-family: Grtsk Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    background: linear-gradient(87.79deg, #8794FF 5.12%, #3B50FF 99.11%);
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+.min-subscription-rate{
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 10%;
+    margin-left: 5%;
+    letter-spacing: 0.02em;
+    color: #4A4E52;
+}
+.settings-button:hover{
+    background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
+}
 .single-nft-nav span{
     margin-right: 20px;
     font-family: Grtsk-Zetta;

@@ -4,6 +4,8 @@ import Nav from '../shared/nav/nav';
 import NFTEarning from '../partials/NFTEarning/NFTEarning';
 import Footer from '../shared/footer/footer';
 import { Link } from 'react-router-dom';
+import { Modal} from 'react-responsive-modal'
+import { useState } from 'react';
 export default function Marketplace (){
 
     const imgAvatar = {
@@ -11,8 +13,68 @@ export default function Marketplace (){
         maxHeight: "25px",
     };
 
+    const mainNFTImg  = {
+        width: "440px",
+        height: "440px"
+    }
+    const modalStyle= {
+        padding: "50px"
+
+    }
+    const depositEth = {
+        width: "100%",
+        height: "140px",
+        background: "#F0F1F9",
+        borderRadius: "20px",
+        marginBottom: "30%",
+        border: "none"
+    }
+    const depositEthInput = {
+        background: "#F0F1F9",
+        borderRadius: "20px",
+        marginBottom: "10%",
+        marginTop: "4%",
+        marginLeft: "5%",
+        fontSize: "14px",
+        border: "none"
+    }
+    const subscriptionLast = {
+        width: "100%",
+        height: "60px",
+        paddingLeft: "5%",
+        fontSize: "14px",
+        background: "#F0F1F9",
+        borderRadius: "20px",
+        marginBottom: "10%",
+        border: "none"
+    }
+    const [open, setOpen] = useState(false);
+
+    const onOpenModal = () => setOpen(true);
+    const onCloseModal = () => setOpen(false);
+    
+
     return(
         <div>
+                <Modal open={open} onClose={onCloseModal} center style={modalStyle}>
+                    <div className="row" style={modalStyle} >
+                        <div className="col-md-6 col-lg-6">
+                            <NFTEarning image="/img/spotify.png"></NFTEarning>
+                        </div>
+                        <div className="col-ld-6 col-md-6">
+                            <div style={depositEth}>
+                            <input type="text" placeholder="Deposit ETH" style={depositEthInput}></input>
+                            <div className="min-subscription-rate">
+                                0.463 ETH Minimum
+                            </div>
+                            </div>
+
+                            <input type="text" placeholder="Subscription Time" style={subscriptionLast}></input>
+
+                            <button class="settings-button">Subscribe</button>
+                        </div>
+                    </div>
+                </Modal>
             <Nav/>
             <div className="row">
             
@@ -41,7 +103,7 @@ export default function Marketplace (){
                         </div>
                         <div className="row">
                             <div className="col-md-6 col-lg-6">
-                                <button className="buy-nft"> SUBSCRIBE </button>
+                                <button className="buy-nft" onClick={onOpenModal}> SUBSCRIBE </button>
                             </div>
                             <div className="col-md-6 col-lg-6">
                             <Link to="/singlenft"className="text-link">

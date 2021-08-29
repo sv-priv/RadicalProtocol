@@ -42,24 +42,22 @@ export default function Landing () {
                 </div>
 
                 <div className="row buttons-landing">
-                    <div className="col-lg-1 col-md-1"></div>
    
-                    <div className="col-lg-5 col-md-6 col-sm-12 browse-button">
+                    <div className="col-lg-6 col-md-6 col-sm-12 browse-button">
                         <div className="button-text">
-                            <Link className="text-link" to="/marketplace">
+                            <Link className="text-link-buttons" to="/marketplace">
                                 Browse Content
                             </Link>
                         </div>
                     </div>
-                    <div className="col-lg-5 col-md-5  col-sm-12 read-documentation-button">
+                    <div className="col-lg-6 col-md-6  col-sm-12 read-documentation-button">
                         <div className="button-text">
-                        <Link className="text-link" to="/mint">
+                        <Link className="text-link-buttons" to="/mint">
                             Create a subscription NFT
                         </Link>
                         
                         </div>
                     </div>
-                    <div className="col-lg-1 col-md-1"></div>
 
                 </div>
 

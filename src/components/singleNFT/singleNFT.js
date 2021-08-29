@@ -31,16 +31,22 @@ export default function SingleNFT () {
         background: "#F0F1F9",
         borderRadius: "20px",
         marginBottom: "10%",
+        marginTop: "4%",
+        marginLeft: "5%",
+        fontSize: "14px",
         border: "none"
     }
     const subscriptionLast = {
         width: "100%",
         height: "60px",
+        paddingLeft: "5%",
+        fontSize: "14px",
         background: "#F0F1F9",
         borderRadius: "20px",
         marginBottom: "10%",
         border: "none"
     }
+    
     const [open, setOpen] = useState(false);
 
     const onOpenModal = () => setOpen(true);
@@ -55,20 +61,17 @@ export default function SingleNFT () {
                         </div>
                         <div className="col-ld-6 col-md-6">
                             <div style={depositEth}>
-                            <input type="text" placeholder="TEST" style={depositEthInput}></input>
-                            <div>test</div>
+                            <input type="text" placeholder="Deposit ETH" style={depositEthInput}></input>
+                            <div className="min-subscription-rate">
+                                0.463 ETH Minimum
+                            </div>
                             </div>
 
-                            <input type="text" placeholder="TEST" style={subscriptionLast}></input>
+                            <input type="text" placeholder="Subscription Time" style={subscriptionLast}></input>
 
-                            <button class="settings-button">Save new password</button>
+                            <button class="settings-button">Subscribe</button>
                         </div>
                     </div>
-
-   
-
-
-
                 </Modal>
             <Nav/>
                 <div className="row picture-section"> 
@@ -106,7 +109,7 @@ export default function SingleNFT () {
                             </div>
                             <div className="col-md-6 col-lg-6 right-part">
                                 <div className="patronage">
-                                    10%
+                                    30
                                 </div>
                                 <div className="patronage-desc">
                                     Minimum subscription in days

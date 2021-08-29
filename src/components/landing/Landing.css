@@ -170,10 +170,21 @@
     text-align: center;
     color: #313439;
 }
-.text-link {
+.text-link:hover {
     text-decoration: inherit;
+    font-family: Whyte;
+    color: blue;
+}
+.right-content a{
     font-family: Grtsk Zetta;
-    color: #3B50FF;
+}
+.text-link-buttons{
+    text-decoration: none;
+    color: inherit;
+}
+.text-link-buttons:hover {
+    color: white;
+    text-decoration: in;
 }
 @keyframes mymove {
     from {left: 0px;}
@@ -211,6 +222,8 @@
     background-color: white;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
+    padding-left: 8%;
+    padding-right: 8%;
     padding-bottom: 100px;
     text-transform: uppercase;
 }

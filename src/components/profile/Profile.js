@@ -26,269 +26,301 @@ export default function Profile (){
                         <div><a>Subscription History</a></div>
                         <div><a>USERS OVERVIEw</a></div>
                         <div><a>YOUR SUBSCRIBERS</a></div>
-                        <div><a>← BACK TO CONTENT</a></div>
+                        <div><a href="/mint">Create Subscription</a></div>
+                        <div><a href="/marketplace">← BACK TO CONTENT</a></div>
                     </div>                
                 </div>
                 <div className="col-md-9 col-lg-9 overview right-profile" >
-                    <div className="row">
-                            
-                            <div className="col-md-9 col-lg-9 back-to-markeplace">
-                                <Link className="text-link" to="/marketplace">
-                                    ← Back to SEE CONTENT
-                                </Link>
+
+                    <div className="my-subscriptions">
+                        <div className="my-subscription-text">My Subscriptions</div>
+                        <div className="overview">
+                            <div className="profile-section-title">Overview</div>
+                            <div className="profile-section-desc">Manage your subscriptions.</div>
+                            <div className="row collect-row">
+                                <div className="col-md-12 col-lg-12 col-sm-12">
+                                    <div className="current-patronage">
+                                        <div className="price-desc">Monthly payment</div>
+                                        <div className="price-dollars">$ 3.200</div>
+                                        <div className="price-eth">1 ETH</div>
+
+                                    </div>
+                                </div>
                             </div>
-                            <span className="col-md-3 col-lg-3 right-profile-menu">
+                        </div>
+                        <div className="active-listings">
+                            <div className="profile-section-title">Active Subscriptions</div>
+                            <div className="profile-section-desc">What are u enjoying at the moment</div>
+                            <div className="row active-listing-nft">
+                                <div className="col-md-4 col-lg-4">
+                                    <NFTEarning image="/img/gabriel.png"></NFTEarning>
+                                </div>
+                                <div className="col-md-8 col-lg-8">
+                                    <div className="listed-nft-desc">
+                                        <div className="active-subscription-desc">
+                                        All leaks in one.
+                                        Access premium community content, investment opportunities and exclusive discord chan.
+                                        </div>
+                                    </div>
+                                    <div className="row manage-funds-buttons">
+                                        <button className="col-md-5 col-lg-5 deposit-subscription-button">
+                                                DEPOSIT
+                                        </button>
+                                        <button className="col-md-5 col-lg-5 cancel-subscription-button">
+                                                CANCEL
 
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row active-listing-nft">
+                                <div className="col-md-4 col-lg-4">
+                                    <NFTEarning image="/img/gabriel.png"></NFTEarning>
+                                </div>
+                                <div className="col-md-8 col-lg-8">
+                                    <div className="listed-nft-desc">
+                                        <div className="active-subscription-desc">
+                                        All leaks in one.
+                                        Access premium community content, investment opportunities and exclusive discord chan.
+                                        </div>
+                                    </div>
+                                    <div className="row  manage-funds-buttons">
+                                        <button className="col-md-5 col-lg-5 deposit-subscription-button">
+                                            DEPOSIT
+                                        </button>
+                                        <button className="col-md-5 col-lg-5 cancel-subscription-button">
+                                            CANCEL 
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="radical-nfts">
+                            <div className="profile-section-title">Subscription History</div>
+                            <div className="profile-section-desc">Consume the way you want.</div>
+                            <div className="row patronage-table-nav">
+                                <div className="col-lg-4 col-md-4">
+                                        Name
+                                    </div>
+                                    <div className="col-lg-2 col-md-2">
+                                    </div>
+                                    <div className="col-lg-2 col-md-2">
+                                    </div>
+                                    <div className="col-lg-2 col-md-2">
+                                        Starting Date
+                                    </div>
+                                    <div className="col-lg-2 col-md-2">
+                                        Ending Date
+                                    </div>
+                            </div>
 
-                                <Link className="text-link" to="/mint">
-                                    <span className=" nav-item"> Mint</span>
-                                </Link>
+                            <div className="row patronage-table-row">
+                                <div className="col-lg-4 col-md-4">
+                                    <span className="small-image"></span>
+                                    Spotify Premium
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                    <span className="starting-date">15.06.21</span>
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                <span className="ending-date">02.08.21</span>
+                                </div>
+                            </div>
 
-                                <Link to="/profile" className="text-link">
-                                    <span className="profile"> U </span>
-                                </Link>
+                            <div className="row patronage-table-row">
+                                <div className="col-lg-4 col-md-4">
+                                    <span className="small-image"></span>
+                                    Spotify Family
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                    <span className="starting-date">03.01.21</span>
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                    <span className="ending-date">09.06.21</span>
+                                </div>
+                            </div>
 
-                            </span>
+                            <div className="row patronage-table-row">
+                                <div className="col-lg-4 col-md-4">
+                                    <span className="small-image"></span>
+                                    Gabriel Haines
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                    <span className="starting-date">12.04.21</span>
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                    <span className="ending-date">20.04.21</span>
+                                </div>
+                            </div>
+
+                            <div className="row patronage-table-row">
+                                <div className="col-lg-4 col-md-4">
+                                    <span className="small-image"></span>
+                                    Netflix
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                    <span className="starting-date">15.06.21</span>
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                    <span className="ending-date">25.07.21</span>
+                                </div>
+                            </div>
+
+                            <div className="row patronage-table-row">
+                                <div className="col-lg-4 col-md-4">
+                                    <span className="small-image"></span>
+                                    Hulu
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                    <span className="starting-date">13.02.21</span>
+                                </div>
+                                <div className="col-lg-2 col-md-2">
+                                    <span className="ending-date">13.03.21</span>
+                                </div>
+                            </div>
+         
                     </div>
-                    <div className="overview">
-                        <div className="profile-section-title">Overview</div>
-                        <div className="profile-section-desc">Manage your subscriptions.</div>
-                        <div className="row collect-row">
-                            <div className="col-md-12 col-lg-12 col-sm-12">
+
+
+                    </div>
+
+                    <div className="my-users">
+                        <div className="my-subscription-text">My Users</div>
+                    </div>
+                    <div className="row collect-row">
+                            <div className="col-md-9 col-lg-9 col-sm-12">
                                 <div className="current-patronage">
-                                    <div className="price-desc">Monthly payment</div>
+                                    <div className="price-desc">Total Revenue Generated</div>
                                     <div className="price-dollars">$ 3.200</div>
                                     <div className="price-eth">1 ETH</div>
 
                                 </div>
                             </div>
-                            {/* <div className="col-md-3 col-lg-3">
+                            <div className="col-md-3 col-lg-3">
                                 <button className="collect-patronage">
                                     Collect
                                 </button>
 
-                            </div> */}
+                            </div>
                         </div>
-                        {/* <div className="row patronages-row" >
-                            <div className="col-md-4 col-lg-4 box">
+                        <div className="row patronages-row" >
+                            <div className="col-md-6 col-lg-6 box">
                                 <div className="total-patronage">
-                                    <div className="price-desc">  Total Patronage ↑</div>
+                                    <div className="price-desc">  Monthly Revenue Generated</div>
                                     <div className="price-dollars">$ 5.200</div>
                                     <div className="price-eth">2.1 ETH</div>
                                 </div>
                             </div>
-                            <div className="col-md-4 col-lg-4 box">
+                            <div className="col-md-6 col-lg-6 box">
                                 <div className="deposit-patronage">
-                                    <div className="price-desc">Deposited Patronage ↓</div>
+                                    <div className="price-desc">Number of Subscribers</div>
                                     <div className="price-dollars">$ 0</div>
                                     <div className="price-eth">0 ETH</div>
                                 </div>
                             </div>
-                            <div className="col-md-4 col-lg-4 box">
-                                <div className="deposit-patronage">
-                                        
-                                </div>
-                            </div>
-                        </div> */}
-                    </div>
-                    <div className="active-listings">
-
-                        <div className="profile-section-title">Active Subscriptions</div>
-                        <div className="profile-section-desc">What are u enjoying at the moment</div>
-                        <div className="row active-listing-nft">
-                            <div className="col-md-4 col-lg-4">
-                                <NFTEarning image="/img/gabriel.png"></NFTEarning>
-                            </div>
-                            <div className="col-md-8 col-lg-8">
-                                <div className="listed-nft-desc">
-
-                                </div>
-                                <div className="row">
-                                    <button className="col-md-6 col-lg-6 edit-listing-button">
-                                            DEPOSIT
-                                    </button>
-                                    <button className="col-md-6 col-lg-6 remove-listing-button">
-                                            CANCEL AND WITHDRAW DEPOSIT
-
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row active-listing-nft">
-                            <div className="col-md-4 col-lg-4">
-                                <NFTEarning image="/img/gabriel.png"></NFTEarning>
-                            </div>
-                            <div className="col-md-8 col-lg-8">
-                                <div className="listed-nft-desc">
-
-
-                                      </div>
-                                <div className="row">
-                                    <button className="col-md-6 col-lg-6 edit-listing-button">
-                                        DEPOSIT
-                                    </button>
-                                    <button className="col-md-6 col-lg-6 remove-listing-button">
-                                        CANCEL AND WITHDRAW DEPOSIT
-
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="radical-nfts">
-                        <div className="profile-section-title">Subscription History</div>
-                        <div className="profile-section-desc">Consume the way you want.</div>
-                        <div className="row">
 
                         </div>
-         
-                    </div>
+
+
+                    
+
                     <div className="patronage-nfts">
-                        <div className="profile-section-title">Patronage NFTs</div>
-                        <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
+                        <div className="profile-section-title">Your SUBSCRIBERS</div>
+                        <div className="profile-section-desc">Manage your community</div>
                         <div className="row patronage-table-nav">
-                        <div className="col-lg-4 col-md-4">
-                                Name
-                            </div>
                             <div className="col-lg-2 col-md-2">
-                                Listed price
+                                Subscriber Name
                             </div>
-                            <div className="col-lg-2 col-md-2">
-                                patronage
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                yearly patronage
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                total patronage generated
-                            </div>
-                        </div>
-                        <div className="row patronage-table-row">
-                        <div className="col-lg-4 col-md-4">
-                        <span className="small-image"></span>
-
-                                Syntaxs Mistery
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                1.5 ETH
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                10 %
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                $100
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                $200
-                            </div>
-                        </div>
-                        <div className="row patronage-table-row">
-                        <div className="col-lg-4 col-md-4">
-                        <span className="small-image"></span>
-
-                                Syntaxs Mistery
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                1.5 ETH
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                10 %
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                $100
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                $200
-                            </div>
-                        </div>
-                        <div className="row patronage-table-row">
                             <div className="col-lg-4 col-md-4">
-                                <span className="small-image"></span>
-                                Syntaxs Mistery
-                            </div>
-                            <div className="col-lg-2 col-md-2">
                                 
-                                1.5 ETH
                             </div>
-                            <div className="col-lg-2 col-md-2">
-                                10 %
+                            <div className="col-lg-3 col-md-3">
+                                CONSECUTIVE DAYS
                             </div>
-                            <div className="col-lg-2 col-md-2">
-                                $100
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                $200
+                            <div className="col-lg-3 col-md-3">
+                                CONTENT
                             </div>
                         </div>
                         <div className="row patronage-table-row">
+                            <div className="col-lg-2 col-md-2">
+                                <span className="small-image"></span>
+                                    velkoskis.eth
+                            </div>
                             <div className="col-lg-4 col-md-4">
-                            <span className="small-image"></span>
-
-                                Syntaxs Mistery
                             </div>
-                            <div className="col-lg-2 col-md-2">
-                                1.5 ETH
+                            <div className="col-lg-3 col-md-3">
+                                56
                             </div>
-                            <div className="col-lg-2 col-md-2">
-                                10 %
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                $100
-                            </div>
-                            <div className="col-lg-2 col-md-2">
-                                $200
+                            <div className="col-lg-3 col-md-3">
+                                Spotify Premium
                             </div>
                         </div>
+                        <div className="row patronage-table-row">
+                            <div className="col-lg-2 col-md-2">
+                                <span className="small-image"></span>
+                                    eric.eth
+                            </div>
+                            <div className="col-lg-4 col-md-4">
+                            </div>
+                            <div className="col-lg-3 col-md-3">
+                                60
+                            </div>
+                            <div className="col-lg-3 col-md-3">
+                            Spotify Premium
+                            </div>
+                        </div>
+                        <div className="row patronage-table-row">
+                            <div className="col-lg-2 col-md-2">
+                                <span className="small-image"></span>
+                                    kalis.eth
+                            </div>
+                            <div className="col-lg-4 col-md-4">
+                            </div>
+                            <div className="col-lg-3 col-md-3">
+                                23
+                            </div>
+                            <div className="col-lg-3 col-md-3">
+                            Spotify Premium
+                            </div>
+                        </div>
+                        <div className="row patronage-table-row">
+                            <div className="col-lg-2 col-md-2">
+                                <span className="small-image"></span>
+                                    trcx.eth
+                            </div>
+                            <div className="col-lg-4 col-md-4">
+                            </div>
+                            <div className="col-lg-3 col-md-3">
+                                25
+                            </div>
+                            <div className="col-lg-3 col-md-3">
+                            Spotify Premium
+                            </div>
+                        </div>
+                       
                     </div>
-                    <div className="collected-nfts">
-                        <div className="profile-section-title" >Collected NFT</div>
-                        <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
-                        <div className="row">
-    
-                        </div>
-                    </div>
-                    <div className="account-settings">
-                        <div className="profile-section-title">Account Settings</div>
-                        <div className="profile-section-desc">Interdum convallis odio scelerisque amet eu pharetra quam pulvinar imperdiet.</div>
-                        <div className="row">
-                            <div className="col-md-9 col-lg-9">
-                                <div className="settings-field"></div>
-                            </div>
-                            <div className="col-md-3 col-lg-3">
-                                <button className="settings-button">
-                                 Save new password 
-                                </button>
 
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-9 col-lg-9">
-                                <div className="settings-field"></div>
-                            </div>
-                            <div className="col-md-3 col-lg-3">
-                                <button className="settings-button">
-                                    Save new email 
-                                </button>
-
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-9 col-lg-9">
-                                <div className="settings-field"></div>
-                            </div>
-                            <div className="col-md-3 col-lg-3">
-                                <button className="settings-button">
-                                    Connect new wallet 
-                                </button>
-
-                            </div>
-                        </div>
-                    </div>
-                    <Link className="text-link back-to-marketplace" to="/marketplace ">
-                        ← Back to marketplace
-                    </Link>
+                   
                 </div>
 
             </div>
