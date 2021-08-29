@@ -1,6 +1,6 @@
 import React from 'react'
-import Modal from 'react-modal'
 import { Field, reduxForm } from 'redux-form'
+import { Modal } from 'react-responsive-modal';
 import { Link } from 'react-router-dom'
 import './Mint.css'
 
@@ -130,7 +130,7 @@ function  Mint() {
     return(
         <div>
             <Modal 
-                isOpen={modalUploadIsOpen}
+                open={modalUploadIsOpen}
                 style={connectModal} >
 
                     <div className="title-mint">
@@ -173,7 +173,7 @@ function  Mint() {
             </Modal>
 
             <Modal 
-            isOpen={modalInfoIsOpen}
+            open={modalInfoIsOpen}
             style={connectModal}>
 
                     <div className="title-mint">
@@ -197,7 +197,7 @@ function  Mint() {
 
             </Modal>
             <Modal 
-            isOpen={modalPriceIsOpen}
+            open={modalPriceIsOpen}
             style={connectModal}>
                     <div className="title-mint">
                         Create Subscription Offer

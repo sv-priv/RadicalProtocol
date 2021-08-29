@@ -60,6 +60,22 @@
     text-transform: uppercase;
     color: white;
 }
+.deposit-subscription-button:hover{
+    background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
+}
+.cancel-subscription-button:hover{
+    background: #BAC2FF;
+
+}
+.collect-patronage:hover{
+    background: linear-gradient(87.79deg, #3B50FF 5.12%, #8794FF 98.62%);
+}
+.see-more-subscribers{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3%;
+    
+}
 .price-desc{
     font-family: Grtsk Zetta;
     padding: 20px;
@@ -100,19 +116,16 @@
 }
 .active-listing-nft{
     margin-bottom: 40px;
-    
 }
+
 .active-subscription-desc{
     font-family: Whyte;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 120%;
-/* or 24px */
-
-letter-spacing: 0.01em;
-
-color: #808195;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #808195;
 }
 .patronage-table-nav{
     font-family: Grtsk Zetta;
@@ -140,15 +153,12 @@ color: #808195;
 }
 
 .active-listings{
-    border-bottom: 1px solid #F0F1F9;
     margin-right: 3%;
-
 }
 .patronages-row{
     padding: 20px;
     padding-left: 0px;
     padding-bottom: 50px;
-    border-bottom: 1px solid #F0F1F9;
     margin-right: 3%;
 
 }
@@ -186,6 +196,7 @@ color: #808195;
     padding-bottom: 50px;
     border-bottom: 1px solid #F0F1F9;
     margin-right: 3%;
+    margin-bottom: 50px;
 }
 
 .price-eth{
@@ -235,7 +246,7 @@ color: #808195;
     letter-spacing: 0.01em;
     color: #808195;
     margin-top: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 
 }
 .profile-section-title{
@@ -249,7 +260,7 @@ color: #808195;
     letter-spacing: 0.01em;
     text-transform: capitalize;
     color: #313439;
-    margin-top: 100px;
+    margin-top: 5%;
 }
 .profile-page{
     padding-left: 20px;
@@ -326,10 +337,25 @@ color: #808195;
 
 }
 .my-subscription-text{
-    font-family: Inter;
+    font-family: Whyte;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
+
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #313439;
+}
+.my-users-text{
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 10%;
+    margin-bottom: 6%;
     line-height: 100%;
     display: flex;
     align-items: center;

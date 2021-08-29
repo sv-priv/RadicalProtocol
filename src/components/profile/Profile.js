@@ -36,7 +36,7 @@ export default function Profile (){
                         <div className="my-subscription-text">My Subscriptions</div>
                         <div className="overview">
                             <div className="profile-section-title">Overview</div>
-                            <div className="profile-section-desc">Manage your subscriptions.</div>
+                            <div className="profile-section-desc">Manage subscriptions</div>
                             <div className="row collect-row">
                                 <div className="col-md-12 col-lg-12 col-sm-12">
                                     <div className="current-patronage">
@@ -75,13 +75,12 @@ export default function Profile (){
                             </div>
                             <div className="row active-listing-nft">
                                 <div className="col-md-4 col-lg-4">
-                                    <NFTEarning image="/img/gabriel.png"></NFTEarning>
+                                    <NFTEarning image="/img/netflix.png"></NFTEarning>
                                 </div>
                                 <div className="col-md-8 col-lg-8">
                                     <div className="listed-nft-desc">
                                         <div className="active-subscription-desc">
-                                        All leaks in one.
-                                        Access premium community content, investment opportunities and exclusive discord chan.
+                                        Watch Breaking Bad
                                         </div>
                                     </div>
                                     <div className="row  manage-funds-buttons">
@@ -198,6 +197,8 @@ export default function Profile (){
                                     <span className="ending-date">13.03.21</span>
                                 </div>
                             </div>
+                                                    <div className="see-more-subscribers">See More ..</div>
+
          
                     </div>
 
@@ -205,7 +206,7 @@ export default function Profile (){
                     </div>
 
                     <div className="my-users">
-                        <div className="my-subscription-text">My Users</div>
+                        <div className="my-users-text">My Users</div>
                     </div>
                     <div className="row collect-row">
                             <div className="col-md-9 col-lg-9 col-sm-12">
@@ -245,8 +246,8 @@ export default function Profile (){
                     
 
                     <div className="patronage-nfts">
-                        <div className="profile-section-title">Your SUBSCRIBERS</div>
-                        <div className="profile-section-desc">Manage your community</div>
+                        <div className="profile-section-title">My subscribers</div>
+                        <div className="profile-section-desc">Manage community</div>
                         <div className="row patronage-table-nav">
                             <div className="col-lg-2 col-md-2">
                                 Subscriber Name
@@ -317,7 +318,8 @@ export default function Profile (){
                             Spotify Premium
                             </div>
                         </div>
-                       
+
+                        <div className="see-more-subscribers">See More ..</div>
                     </div>
 
                    
