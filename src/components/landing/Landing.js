@@ -4,11 +4,13 @@ import NFTEarning from '../partials/NFTEarning/NFTEarning';
 import Nav from '../shared/nav/nav';
 import { Link , Redirect }  from 'react-router-dom';
 import Footer from '../shared/footer/footer';
+import Mint  from '../partials/Mint/Mint';
+import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+
 
 
 
 export default function Landing () {
-
 
 
     return(

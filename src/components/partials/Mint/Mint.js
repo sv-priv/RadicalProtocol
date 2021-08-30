@@ -26,26 +26,25 @@ function  Mint() {
 
     const [modalUploadIsOpen, setUploadIsOpen] = React.useState(true);
     const [modalInfoIsOpen, setInfoIsOpen] = React.useState(false);
-    const [modalCollectionIsOpen, setCollectionIsOpen] = React.useState(false);
     const [modalPriceIsOpen, setPriceIsOpen] = React.useState(false);
+
+    const onCloseFirstModal = () => setUploadIsOpen(false)
+    const onCloseSecondModal = () => setInfoIsOpen(false)
+    const onCloseThirdModal = () => setPriceIsOpen(false)
 
 
     function addUpload(){
         setUploadIsOpen(true);
-        setCollectionIsOpen(false);
         setInfoIsOpen(false);
         setPriceIsOpen(false);
         setInfoActive(null);
         setPriceActive(null)
         setCollectionActive(null)
         setUploadActive('active')
-
-
     }
     function addInfo(){
         setUploadIsOpen(false);
         setPriceIsOpen(false);
-        setCollectionIsOpen(false);
         setInfoIsOpen(true);
         setUploadActive(null);
         setCollectionActive(null)
@@ -56,14 +55,12 @@ function  Mint() {
         setInfoIsOpen(false);
         setUploadIsOpen(false);
         setPriceIsOpen(false);
-        setCollectionIsOpen(true);
         setInfoActive(null);
         setPriceActive(null)
         setUploadActive(null)
         setCollectionActive('active')
     }
     function addPrice(){
-        setCollectionIsOpen(false);
         setUploadIsOpen(false);
         setInfoIsOpen(false);
         setPriceIsOpen(true);
@@ -131,6 +128,7 @@ function  Mint() {
         <div>
             <Modal 
                 open={modalUploadIsOpen}
+                onClose={onCloseFirstModal}
                 style={connectModal} >
 
                     <div className="title-mint">
@@ -174,6 +172,7 @@ function  Mint() {
 
             <Modal 
             open={modalInfoIsOpen}
+            onClose={onCloseSecondModal}
             style={connectModal}>
 
                     <div className="title-mint">
@@ -198,7 +197,9 @@ function  Mint() {
             </Modal>
             <Modal 
             open={modalPriceIsOpen}
+            onClose={onCloseThirdModal}
             style={connectModal}>
+                
                     <div className="title-mint">
                         Create Subscription Offer
                     </div>
